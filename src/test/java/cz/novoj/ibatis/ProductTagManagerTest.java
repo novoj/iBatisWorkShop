@@ -29,4 +29,14 @@ public class ProductTagManagerTest extends AbstractBaseTest {
 		assertEquals(1, (int)tag.getId());
 		assertEquals("Samsung", tag.getName());		
 	}
+
+	@Test
+	public void testCreateTag() throws Exception {
+		Tag tag = new Tag("můjNovýTag");
+		productTagMapper.createProductTag(tag);
+		assertNotNull(tag.getId());
+
+		Tag loadedTag = productTagMapper.getTagById(tag.getId());
+		assertEquals(tag, loadedTag);
+	}
 }

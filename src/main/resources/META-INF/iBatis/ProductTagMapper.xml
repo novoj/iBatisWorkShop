@@ -3,9 +3,10 @@
         "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
 <mapper namespace="cz.novoj.ibatis.ProductTagMapper">
 
-    <insert id="createProductTag" parameterType="tag" keyProperty="id">
+    <insert id="createProductTag" parameterType="tag">        
         insert into tag (name)
                values (#{name})
+        <selectKey keyProperty="id" resultType="int">call identity()</selectKey>
     </insert>
 
     <update id="updateProductTag" parameterType="tag">

@@ -15,6 +15,13 @@ public class Tag implements Serializable {
 	private String name;
 	private List<Product> products;
 
+	public Tag() {
+	}
+
+	public Tag(String name) {
+		this.name = name;
+	}
+
 	public Integer getId() {
 		return id;
 	}

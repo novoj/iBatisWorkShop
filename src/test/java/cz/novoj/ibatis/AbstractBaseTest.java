@@ -2,6 +2,7 @@ package cz.novoj.ibatis;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.jdbc.ScriptRunner;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,7 @@ import java.sql.SQLException;
 )
 public abstract class AbstractBaseTest {
 	public static final String DATABASE_CREATE_SQL = "database/create.sql";
+	public static final String DATABASE_DROP_SQL = "database/drop.sql";
 	private static final String DATABASE_DATALOAD_SQL = "database/test-data.sql";
 	@Autowired(required = true)
 	private JdbcTemplate jdbcTemplate;
@@ -42,6 +44,11 @@ public abstract class AbstractBaseTest {
 	public void setupDatabase() throws Exception {
 		runScript(dataSource, DATABASE_CREATE_SQL);
 		runScript(dataSource, DATABASE_DATALOAD_SQL);
+	}
+
+	@After
+	public void dropDatabase() throws Exception {
+		runScript(dataSource, DATABASE_DROP_SQL);
 	}
 
 	protected static void runScript(DataSource ds, String resource) throws IOException, SQLException {

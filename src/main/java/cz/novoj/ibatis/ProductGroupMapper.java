@@ -11,10 +11,14 @@ import cz.novoj.ibatis.model.product.Group;
 @SuppressWarnings({"InterfaceNeverImplemented"})
 public interface ProductGroupMapper {
 
-	void createProductGroup(Group group);
+	void createGroup(Group group);
 
-	void updateProductGroup(Group group);
+	void updateGroup(Group group);
 
-	int deleteProductGroup(int id);
+	int deleteGroup(int id);
+
+	int countGroups();
+
+	Group getGroupById(int id);
 
 }

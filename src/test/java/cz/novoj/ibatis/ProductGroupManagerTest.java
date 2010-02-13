@@ -1,12 +1,11 @@
 package cz.novoj.ibatis;
 
-import cz.novoj.ibatis.model.product.Product;
+import cz.novoj.ibatis.model.product.Group;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 
 /**
  * Description
@@ -16,20 +15,18 @@ import static org.junit.Assert.assertNull;
  */
 public class ProductGroupManagerTest extends AbstractBaseTest {
 	@Autowired
-	private ProductMapper productMapper;
+	private ProductGroupMapper productGroupMapper;
 
 	@Test
-	public void testCountProducts() throws Exception {
-		assertEquals(18, productMapper.countProducts());
+	public void testCountGroups() throws Exception {
+		assertEquals(4, productGroupMapper.countGroups());
 	}
 
 	@Test
-	public void testGetProductById() throws Exception {
-		Product product = productMapper.getProductById(1);
-		assertNotNull(product);
-		assertEquals(1, (int)product.getId());
-		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
-		assertNull(product.getGroup());
-		assertNull(product.getTags());
+	public void testGetGroupById() throws Exception {
+		Group group = productGroupMapper.getGroupById(1);
+		assertNotNull(group);
+		assertEquals(1, (int)group.getId());
+		assertEquals("HDD", group.getName());		
 	}
 }

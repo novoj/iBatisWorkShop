@@ -3,16 +3,27 @@
         "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
 <mapper namespace="cz.novoj.ibatis.ProductGroupMapper">
 
-    <insert id="createProductGroup" parameterType="group" keyProperty="id">
+    <insert id="createGroup" parameterType="group">
+        <selectKey keyProperty="id" resultType="int">
+            select next value for groupSequence
+        </selectKey>
         insert into productGroup (name, groupType)
                values (#{name}, #{groupType})
     </insert>
 
-    <update id="updateProductGroup" parameterType="group">
+    <update id="updateGroup" parameterType="group">
         update productGroup
             set name = #{name},
                 groupType = #{groupType}
             where id = #{id}
     </update>
+
+    <select id="countGroups" resultType="int">
+        select count(*) from productGroup
+    </select>
+
+    <select id="getGroupById" parameterType="int" resultType="group">
+        select * from productGroup where id = #{id}
+    </select>
 
 </mapper>

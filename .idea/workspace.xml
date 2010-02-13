@@ -3,17 +3,13 @@
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="a3315fc1-aea1-4d83-a82e-f433fe0f11d9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/database/create.sql" afterPath="$PROJECT_DIR$/src/test/resources/database/create.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductGroupMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductGroupMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/model/product/Group.java" afterPath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/model/product/Group.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes.txt" afterPath="$PROJECT_DIR$/notes.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/database/drop.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductGroupMapper.java" afterPath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductGroupMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductGroupManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductGroupManagerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductTagMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductTagMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductGroupMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductGroupMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/AbstractBaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/AbstractBaseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring/datasource.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring/datasource.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductTagManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductTagManagerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/model/product/Tag.java" afterPath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/model/product/Tag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductGroupManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductGroupManagerTest.java" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="iBatisWorkshop.iws" />
@@ -32,6 +28,21 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/springframework/orm/ibatis3/SqlSessionTemplate.java" line="100" class="org.springframework.orm.ibatis3.SqlSessionTemplate" package="org.springframework.orm.ibatis3">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -73,10 +84,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="ProductGroupMapper.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductGroupMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="66" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ProductTagManagerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductTagManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+            <state line="50" column="7" selection-start="1047" selection-end="1307" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,37 +107,10 @@
       <file leaf-file-name="ProductGroupManagerTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductGroupManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="90" selection-start="580" selection-end="580" vertical-scroll-proportion="0.5295405">
+            <state line="33" column="76" selection-start="857" selection-end="857" vertical-scroll-proportion="0.5426696">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductGroupMapper.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductGroupMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="67" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductGroupMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductGroupMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="10" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/database/create.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="21" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -138,22 +131,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/ibatis-integration.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductTagMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/model/product/Tag.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductTagManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductTagMapper.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/database/create.sql" />
-        <option value="$PROJECT_DIR$/notes.txt" />
         <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductGroupMapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/AbstractBaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/database/drop.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductGroupMapper.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductGroupManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/model/product/Group.java" />
+        <option value="$PROJECT_DIR$/notes.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/datasource.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/database/create.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductGroupMapper.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductTagManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductGroupManagerTest.java" />
       </list>
     </option>
   </component>
@@ -488,21 +481,16 @@
       <recent name="cz.novoj.ibatis.HSqlConnectTest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in iBatisWorkshop">
-    <configuration default="false" name="ProductTagManagerTest.testCountProductTags" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="cz.novoj.ibatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="JUnit.ProductGroupManagerTest.testUpdateGroup">
+    <configuration default="false" name="All in iBatisWorkshop" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
       <module name="iBatisWorkshop" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cz.novoj.ibatis" />
-      <option name="MAIN_CLASS_NAME" value="cz.novoj.ibatis.ProductTagManagerTest" />
-      <option name="METHOD_NAME" value="testCountProductTags" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -516,7 +504,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="ProductTagManagerTest.testGetProductById" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ProductGroupManagerTest.testCreateTag" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
           <option name="PATTERN" value="cz.novoj.ibatis.*" />
@@ -527,34 +515,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="cz.novoj.ibatis" />
-      <option name="MAIN_CLASS_NAME" value="cz.novoj.ibatis.ProductTagManagerTest" />
-      <option name="METHOD_NAME" value="testGetProductById" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ProductTagManagerTest.testCreateTag" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="cz.novoj.ibatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="iBatisWorkshop" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cz.novoj.ibatis" />
-      <option name="MAIN_CLASS_NAME" value="cz.novoj.ibatis.ProductTagManagerTest" />
+      <option name="MAIN_CLASS_NAME" value="cz.novoj.ibatis.ProductGroupManagerTest" />
       <option name="METHOD_NAME" value="testCreateTag" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -570,7 +531,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="ProductGroupManagerTest" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ProductGroupManagerTest.testCreateGroup" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
           <option name="PATTERN" value="cz.novoj.ibatis.*" />
@@ -582,8 +543,41 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="cz.novoj.ibatis" />
       <option name="MAIN_CLASS_NAME" value="cz.novoj.ibatis.ProductGroupManagerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testCreateGroup" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="3069" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ProductTagManagerTest.testUpdateTag" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="cz.novoj.ibatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="iBatisWorkshop" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cz.novoj.ibatis" />
+      <option name="MAIN_CLASS_NAME" value="cz.novoj.ibatis.ProductTagManagerTest" />
+      <option name="METHOD_NAME" value="testUpdateTag" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -597,15 +591,20 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="All in iBatisWorkshop" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
+    <configuration default="false" name="ProductGroupManagerTest.testUpdateGroup" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="cz.novoj.ibatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="iBatisWorkshop" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="cz.novoj.ibatis" />
+      <option name="MAIN_CLASS_NAME" value="cz.novoj.ibatis.ProductGroupManagerTest" />
+      <option name="METHOD_NAME" value="testUpdateGroup" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -728,11 +727,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ProductTagManagerTest.testCountProductTags" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ProductTagManagerTest.testGetProductById" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ProductTagManagerTest.testCreateTag" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ProductGroupManagerTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in iBatisWorkshop" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in iBatisWorkshop" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ProductGroupManagerTest.testCreateTag" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ProductGroupManagerTest.testCreateGroup" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ProductTagManagerTest.testUpdateTag" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ProductGroupManagerTest.testUpdateGroup" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -828,64 +827,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductTagMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="596" selection-end="807" vertical-scroll-proportion="0.5536105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/ibatis-integration.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="71" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.65">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/database/create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="21" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="46" selection-start="338" selection-end="338" vertical-scroll-proportion="0.24070022">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductTagMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="395" selection-end="437" vertical-scroll-proportion="0.50547045">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/orm/ibatis3/SqlSessionTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="0" selection-start="9149" selection-end="9149" vertical-scroll-proportion="0.5435685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductGroupMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="10" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductTagManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,58 +839,107 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1316965">
+        <state line="24" column="41" selection-start="1713" selection-end="1713" vertical-scroll-proportion="-14.105263">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/config/connection.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/database/create.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="33" selection-start="59" selection-end="67" vertical-scroll-proportion="0.045643155">
+        <state line="48" column="73" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.27385893">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/database/drop.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductGroupMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
+        <state line="21" column="10" selection-start="428" selection-end="428" vertical-scroll-proportion="0.58921164">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/AbstractBaseTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-8/ibatis-sqlmap-3.0-beta-8-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="65" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.6181619">
+        <state line="101" column="0" selection-start="4085" selection-end="4085" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-8/ibatis-sqlmap-3.0-beta-8-sources.jar!/org/apache/ibatis/executor/CachingExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-8/ibatis-sqlmap-3.0-beta-8-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="2193" selection-end="2193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-8/ibatis-sqlmap-3.0-beta-8-sources.jar!/org/apache/ibatis/session/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="0" selection-start="8472" selection-end="8472" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-8/ibatis-sqlmap-3.0-beta-8-sources.jar!/org/apache/ibatis/executor/SimpleExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-8/ibatis-sqlmap-3.0-beta-8-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="3273" selection-end="3273" vertical-scroll-proportion="0.3323782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-8/ibatis-sqlmap-3.0-beta-8-sources.jar!/org/apache/ibatis/binding/MapperProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.33241758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-8/ibatis-sqlmap-3.0-beta-8-sources.jar!/org/apache/ibatis/binding/MapperMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.33241758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/orm/ibatis3/SqlSessionTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="0" selection-start="8384" selection-end="8384" vertical-scroll-proportion="0.3175853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductGroupMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="66" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductTagManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="7" selection-start="1047" selection-end="1307" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/ProductGroupMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="67" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="531" selection-end="1331" vertical-scroll-proportion="0.69803065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="14" selection-start="1824" selection-end="1824" vertical-scroll-proportion="0.95185995">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductGroupManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="90" selection-start="580" selection-end="580" vertical-scroll-proportion="0.5295405">
+        <state line="33" column="76" selection-start="857" selection-end="857" vertical-scroll-proportion="0.5426696">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

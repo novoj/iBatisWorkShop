@@ -39,4 +39,15 @@ public class ProductTagManagerTest extends AbstractBaseTest {
 		Tag loadedTag = productTagMapper.getTagById(tag.getId());
 		assertEquals(tag, loadedTag);
 	}
+
+	@Test
+	public void testUpdateTag() throws Exception {
+		Tag tag = productTagMapper.getTagById(1);
+		tag.setName("úplně nové jméno");
+		productTagMapper.updateProductTag(tag);
+
+		Tag loadedTag = productTagMapper.getTagById(1);
+		assertEquals(tag, loadedTag);
+	}
+
 }

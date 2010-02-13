@@ -29,4 +29,26 @@ public class ProductGroupManagerTest extends AbstractBaseTest {
 		assertEquals(1, (int)group.getId());
 		assertEquals("HDD", group.getName());		
 	}
+
+	@Test
+	public void testCreateGroup() throws Exception {
+		Group group = new Group("mojeNováSkupina", "aNovýTyp");
+		productGroupMapper.createGroup(group);
+		assertNotNull(group.getId());
+
+		Group loadedGroup = productGroupMapper.getGroupById(group.getId());
+		assertEquals(group, loadedGroup);
+	}
+
+	@Test
+	public void testUpdateGroup() throws Exception {
+		Group group = productGroupMapper.getGroupById(1);
+		group.setName("úplně nové jméno");
+		group.setGroupType("úplně nový typ");
+		productGroupMapper.updateGroup(group);
+
+		Group loadedGroup = productGroupMapper.getGroupById(1);
+		assertEquals(group, loadedGroup);
+	}
+
 }

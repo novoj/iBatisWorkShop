@@ -14,6 +14,14 @@ public class Group implements Serializable {
   	private String name;
   	private String groupType;
 
+	public Group() {
+	}
+
+	public Group(String name, String groupType) {
+		this.name = name;
+		this.groupType = groupType;
+	}
+
 	public Integer getId() {
 		return id;
 	}

@@ -4,11 +4,11 @@
 <mapper namespace="cz.novoj.ibatis.ProductGroupMapper">
 
     <insert id="createGroup" parameterType="group">
-        <selectKey keyProperty="id" resultType="int">
-            select next value for groupSequence
+        insert into productGroup (id, name, groupType)
+               values (#{id}, #{name}, #{groupType})
+        <selectKey keyProperty="id" resultType="int" order="BEFORE">
+            call next value for groupSequence
         </selectKey>
-        insert into productGroup (name, groupType)
-               values (#{name}, #{groupType})
     </insert>
 
     <update id="updateGroup" parameterType="group">

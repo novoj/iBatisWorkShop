@@ -7,7 +7,7 @@ INSERT INTO user values (6, 'dolar', 'Dominik', 'Linhart', '1988-09-21', 1, 0, '
 INSERT INTO user values (7, 'janko', 'Jan', 'Lašák', '1982-07-02', 1, 1, null, 'Moeller', '2132443345');
 INSERT INTO user values (8, 'dominator', 'Dominik', 'Hašek', '1973-04-01', 0, 1, null, 'Moeller', '2132443345');
 INSERT INTO user values (9, 'veskic', 'Martin', 'Veska', '1979-07-01', 1, 0, '00006', null, null);
-INSERT INTO user values (10, 'jety', 'Pavel', 'Jetenský', '1978-30-08', 1, 0, null, 'Telefonica O2', '4563342132');
+INSERT INTO user values (10, 'jety', 'Pavel', 'Jetenský', '1978-08-20', 1, 0, null, 'Telefonica O2', '4563342132');
 
 INSERT INTO role values (1, 'standardUser', 'Standardní uživatel');
 INSERT INTO role values (2, 'administrator', 'Administrátor');

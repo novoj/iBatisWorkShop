@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
         "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
-<mapper namespace="cz.novoj.ibatis.ProductMapper">
-
-    <select id="countProducts" resultType="int">
-        select count(*) from product
-    </select>
-
-    <select id="getProductById" parameterType="int" resultType="product">
-        select * from product where id = #{id}
-    </select>
+<mapper namespace="cz.novoj.ibatis.ProductGroupMapper">
 
     <insert id="createProductGroup" parameterType="group" keyProperty="id">
         insert into productGroup (name, groupType)

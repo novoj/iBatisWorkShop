@@ -22,6 +22,16 @@
 		<property name="mapperInterface" value="cz.novoj.ibatis.ProductMapper" />
 	</bean>
 
+    <bean id="productTagMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+		<property name="mapperInterface" value="cz.novoj.ibatis.ProductTagMapper" />
+	</bean>
+
+    <bean id="productGroupMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+		<property name="mapperInterface" value="cz.novoj.ibatis.ProductGroupMapper" />
+	</bean>
+
     <bean id="userMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<property name="mapperInterface" value="cz.novoj.ibatis.UserMapper" />

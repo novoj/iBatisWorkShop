@@ -9,7 +9,7 @@ import cz.novoj.ibatis.model.product.Product;
  * @version $Id: $
  */
 @SuppressWarnings({"InterfaceNeverImplemented"})
-public interface ProductMapper {
+public interface ProductMapper {	
 	
 	int countProducts();
 

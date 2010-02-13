@@ -24,6 +24,8 @@
 
     <mappers>
         <mapper resource="META-INF/iBatis/ProductMapper.xml"/>
+        <mapper resource="META-INF/iBatis/ProductTagMapper.xml"/>
+        <mapper resource="META-INF/iBatis/ProductGroupMapper.xml"/>
         <mapper resource="META-INF/iBatis/UserMapper.xml"/>
     </mappers>
 

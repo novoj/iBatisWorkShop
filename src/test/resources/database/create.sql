@@ -35,7 +35,7 @@ CREATE SEQUENCE groupSequence AS INTEGER;
 CREATE TABLE productGroup (
   id INT NOT NULL,
   name varchar(50) NOT NULL,
-  groupType varchar(30) NOT NULL,
+  groupType varchar(30) NULL,
   CONSTRAINT pk_productGroup PRIMARY KEY (id)
 );
 

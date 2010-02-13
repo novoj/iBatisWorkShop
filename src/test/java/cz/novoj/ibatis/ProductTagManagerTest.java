@@ -4,6 +4,8 @@ import cz.novoj.ibatis.model.product.Tag;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
@@ -54,5 +56,13 @@ public class ProductTagManagerTest extends AbstractBaseTest {
 	public void testDeleteTag() throws Exception {
 		productTagMapper.deleteTag(12);
 		assertEquals(11, productTagMapper.countTags());
+	}
+
+	@Test
+	public void testListTagsOrdered() throws Exception {
+		List<Tag> tags = productTagMapper.getOrderedTags("id");
+		assertEquals("Samsung", tags.get(0).getName());
+		List<Tag> anotherTagSet = productTagMapper.getOrderedTags("name");
+		assertEquals(".NET", anotherTagSet.get(0).getName());
 	}
 }

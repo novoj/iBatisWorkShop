@@ -2,6 +2,8 @@ package cz.novoj.ibatis;
 
 import cz.novoj.ibatis.model.product.Tag;
 
+import java.util.List;
+
 /**
  * Contains DAO methods for product tag manipulation and querying.
  *
@@ -19,6 +21,8 @@ public interface ProductTagMapper {
 
 	int countTags();
 
-	Tag getTagById(int id);
+	Tag getTagById(int id);	
+
+	List<Tag> getOrderedTags(String column);
 
 }

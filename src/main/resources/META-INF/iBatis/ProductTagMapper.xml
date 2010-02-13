@@ -16,7 +16,7 @@
     </update>
 
     <delete id="deleteTag" parameterType="int">
-        delete from tag where id = #{id}
+        delete from tag where id = #{value}
     </delete>
 
     <select id="countTags" resultType="int">
@@ -24,7 +24,11 @@
     </select>
 
     <select id="getTagById" parameterType="int" resultType="tag">
-        select * from tag where id = #{id}
+        select * from tag where id = #{value}
+    </select>    
+
+    <select id="getOrderedTags" parameterType="string" resultType="tag">
+        select * from tag order by ${value} asc
     </select>
 
 </mapper>

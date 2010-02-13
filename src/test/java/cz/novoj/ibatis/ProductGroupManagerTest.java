@@ -41,6 +41,16 @@ public class ProductGroupManagerTest extends AbstractBaseTest {
 	}
 
 	@Test
+	public void testCreateGroupWithNullValue() throws Exception {
+		Group group = new Group("mojeNováSkupina");
+		productGroupMapper.createGroup(group);
+		assertNotNull(group.getId());
+
+		Group loadedGroup = productGroupMapper.getGroupById(group.getId());
+		assertEquals(group, loadedGroup);
+	}
+
+	@Test
 	public void testUpdateGroup() throws Exception {
 		Group group = productGroupMapper.getGroupById(1);
 		group.setName("úplně nové jméno");

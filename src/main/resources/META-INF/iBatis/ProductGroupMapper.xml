@@ -5,7 +5,7 @@
 
     <insert id="createGroup" parameterType="group">
         insert into productGroup (id, name, groupType)
-               values (#{id}, #{name}, #{groupType})
+               values (#{id}, #{name}, #{groupType,jdbcType=VARCHAR})
         <selectKey keyProperty="id" resultType="int" order="BEFORE">
             call next value for groupSequence
         </selectKey>

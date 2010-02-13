@@ -6,7 +6,7 @@
         <fileset id="fileset1" name="Production" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/datasource.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/ibatis-integration.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/ibatis-new-integration.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/ibatis-integration.xml</file>
         </fileset>
       </configuration>
     </facet>

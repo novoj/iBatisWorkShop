@@ -11,10 +11,18 @@
         <setting name="multipleResultSetsEnabled" value="true"/>
         <setting name="useColumnLabel" value="true"/>
         <setting name="useGeneratedKeys" value="false"/>        
-    </settings>    
+    </settings>
+
+    <typeAliases>
+        <typeAlias type="cz.novoj.ibatis.model.Product" alias="product"/>
+        <typeAlias type="cz.novoj.ibatis.model.User" alias="user"/>
+        <typeAlias type="cz.novoj.ibatis.model.ExternalUser" alias="externalUser"/>
+        <typeAlias type="cz.novoj.ibatis.model.Employee" alias="employee"/>
+    </typeAliases>    
 
     <mappers>
         <mapper resource="META-INF/iBatis/ProductMapper.xml"/>
+        <mapper resource="META-INF/iBatis/UserMapper.xml"/>
     </mappers>
 
 </configuration>

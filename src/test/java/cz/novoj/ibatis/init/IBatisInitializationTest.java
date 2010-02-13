@@ -1,7 +1,6 @@
-package cz.novoj.ibatis;
+package cz.novoj.ibatis.init;
 
-import cz.novoj.ibatis.init.NoXmlSingletonConnectionManager;
-import cz.novoj.ibatis.init.SingletonConnectionManager;
+import cz.novoj.ibatis.AbstractBaseTest;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;

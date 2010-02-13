@@ -27,7 +27,7 @@ import java.sql.SQLException;
 		locations = {
 				"classpath:spring/testSetup.xml",
 				"classpath:META-INF/spring/datasource.xml",
-				"classpath:META-INF/spring/ibatis-new-integration.xml"
+				"classpath:META-INF/spring/ibatis-integration.xml"
 		}
 )
 public abstract class AbstractBaseTest {

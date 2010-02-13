@@ -1,7 +1,5 @@
 package cz.novoj.ibatis;
 
-import org.apache.ibatis.annotations.Select;
-
 /**
  * Description
  *
@@ -9,9 +7,11 @@ import org.apache.ibatis.annotations.Select;
  * @version $Id: $
  */
 @SuppressWarnings({"InterfaceNeverImplemented"})
-public interface ProductManager {
+public interface ProductMapper {
 
-	@Select("select count(*) from product")
+	/**@Select("select count(*) from product")**/
 	int countProducts();
+
+	
 
 }

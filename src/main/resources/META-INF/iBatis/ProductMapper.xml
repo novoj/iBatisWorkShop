@@ -4,18 +4,37 @@
 <mapper namespace="cz.novoj.ibatis.ProductMapper">
 
     <resultMap id="thinProduct" type="product">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
         <association property="group" column="idGroup" javaType="group">
             <id property="id" column="idGroup"/>
-            <result property="name" column="groupName"/>
+            <result property="name" column="groupName"/>            
+            <result property="groupType" column="groupType"/>            
         </association>
     </resultMap>
 
     <resultMap id="fullProduct" type="product" extends="thinProduct">
-        <!--<collection property="tags"--> 
+        <collection property="tags" ofType="tag">
+            <id property="id" column="idTag"/>
+            <result property="name" column="tagName"/>
+        </collection>
     </resultMap>
+    
+    <sql id="groupJoinColumns">
+        , productGroup.name as groupName, productGroup.groupType
+    </sql>
     
     <sql id="groupJoin">
         inner join productGroup on idGroup = productGroup.id
+    </sql>
+
+    <sql id="tagJoinColumns">
+        , tag.id as idTag, tag.name as tagName
+    </sql>
+
+    <sql id="tagJoin">
+        left outer join productTag on product.id = productTag.idProduct
+        inner join tag on productTag.idTag = tag.id 
     </sql>
 
     <select id="countProducts" resultType="int">
@@ -23,14 +42,27 @@
     </select>
 
     <select id="getProductById" parameterType="int" resultMap="thinProduct">
-        select product.*, productGroup.name as groupName
+        select product.*
+          <include refid="groupJoinColumns"/>  
           from product 
           <include refid="groupJoin"/>
           where id = #{id}
     </select>
 
+    <select id="getFullProductById" parameterType="int" resultMap="fullProduct">
+        select product.*
+          <include refid="groupJoinColumns"/>
+          <include refid="tagJoinColumns"/>
+          from product
+          <include refid="groupJoin"/>
+          <include refid="tagJoin"/>
+          where id = #{id}
+    </select>
+
     <select id="getProductByNameAndGroup" parameterType="map" resultMap="thinProduct">
-        select * from product
+        select product.*
+            <include refid="groupJoinColumns"/> 
+            from product
             <include refid="groupJoin"/>
             where name = #{name} and productGroup.name = #{group}
     </select>

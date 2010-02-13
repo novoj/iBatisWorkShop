@@ -16,6 +16,8 @@ public interface ProductMapper {
 
 	Product getProductById(int id);
 
+	Product getFullProductById(int id);
+
 	Product getProductByNameAndGroup(@Param("name") String name, @Param("group") String group);
 
 	void createProduct(Product product);

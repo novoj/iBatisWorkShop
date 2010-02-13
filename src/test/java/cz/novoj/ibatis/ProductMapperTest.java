@@ -31,7 +31,23 @@ public class ProductMapperTest extends AbstractBaseTest {
 		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
 		assertNotNull(product.getGroup());
 		assertEquals("HDD", product.getGroup().getName());
+		assertEquals("HARDWARE", product.getGroup().getGroupType());
 		assertNull(product.getTags());
+	}
+
+	@Test
+	public void testGetFullProductById() throws Exception {
+		Product product = productMapper.getFullProductById(1);
+		assertNotNull(product);
+		assertEquals(1, (int)product.getId());
+		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
+		assertNotNull(product.getGroup());
+		assertEquals("HDD", product.getGroup().getName());
+		assertEquals("HARDWARE", product.getGroup().getGroupType());
+		assertNotNull(product.getTags());
+		assertEquals(2, product.getTags().size());
+		assertEquals("Lenovo", product.getTags().get(0).getName());
+		assertEquals("SATA", product.getTags().get(1).getName());
 	}
 
 	@Test

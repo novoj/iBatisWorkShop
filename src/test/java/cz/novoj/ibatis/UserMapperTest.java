@@ -15,7 +15,7 @@ import static org.junit.Assert.assertNotNull;
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
  */
-public class UserManagerTest extends AbstractBaseTest {
+public class UserMapperTest extends AbstractBaseTest {
 	@Autowired
 	private UserMapper userMapper;
 

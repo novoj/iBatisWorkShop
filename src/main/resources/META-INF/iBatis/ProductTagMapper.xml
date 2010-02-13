@@ -31,4 +31,12 @@
         select * from tag order by ${value} asc
     </select>
 
+    <select id="getAverageMinMaxLenthtOfTag" resultType="hashmap">
+        select
+            avg(length(name)) as averageLength,
+            min(length(name)) as minLength,
+            max(length(name)) as maxLength
+        from tag
+    </select>
+
 </mapper>

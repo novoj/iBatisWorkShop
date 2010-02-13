@@ -13,7 +13,7 @@ import static org.junit.Assert.assertNotNull;
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
  */
-public class ProductGroupManagerTest extends AbstractBaseTest {
+public class ProductGroupMapperTest extends AbstractBaseTest {
 	@Autowired
 	private ProductGroupMapper productGroupMapper;
 

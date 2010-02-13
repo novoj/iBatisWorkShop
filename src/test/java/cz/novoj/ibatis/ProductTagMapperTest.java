@@ -5,8 +5,10 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 
 /**
@@ -15,7 +17,7 @@ import static org.junit.Assert.assertNotNull;
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
  */
-public class ProductTagManagerTest extends AbstractBaseTest {
+public class ProductTagMapperTest extends AbstractBaseTest {
 	@Autowired
 	private ProductTagMapper productTagMapper;
 
@@ -64,5 +66,14 @@ public class ProductTagManagerTest extends AbstractBaseTest {
 		assertEquals("Samsung", tags.get(0).getName());
 		List<Tag> anotherTagSet = productTagMapper.getOrderedTags("name");
 		assertEquals(".NET", anotherTagSet.get(0).getName());
+	}
+
+	@Test
+	public void testGetCalculationsInHashMap() throws Exception {
+		Map<String,Object> result = productTagMapper.getAverageMinMaxLenthtOfTag();
+		assertFalse(result.isEmpty());
+		assertEquals(6, ((Number)result.get("AVERAGELENGTH")).intValue());
+		assertEquals(2, ((Number)result.get("MINLENGTH")).intValue());
+		assertEquals(13, ((Number)result.get("MAXLENGTH")).intValue());
 	}
 }

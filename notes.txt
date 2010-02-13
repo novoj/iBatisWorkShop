@@ -13,8 +13,11 @@ SEQUENCE
 - tags
     - basic selection
     - CUD operations
+        - selectKey after
+        - selectKey before - from groups mapping
     - selecting into a map
-    - immutable POJOs
+    - immutable POJOs (constructors and even private properties)
 - groups
+    - show only selectKey before
 - product
 - users

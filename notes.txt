@@ -1,3 +1,5 @@
+- lazy loading
+- caching
 - write your own TypeHandler - enum with ordinal()
 - override objectFactory - example with AOP
 - try usage of plugins?! - need to find out rational use-case first

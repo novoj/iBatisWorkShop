@@ -7,17 +7,19 @@
 
     <settings>
         <setting name="cacheEnabled" value="true"/>
-        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="false"/>
         <setting name="multipleResultSetsEnabled" value="true"/>
         <setting name="useColumnLabel" value="true"/>
         <setting name="useGeneratedKeys" value="false"/>        
     </settings>
 
     <typeAliases>
-        <typeAlias type="cz.novoj.ibatis.model.Product" alias="product"/>
-        <typeAlias type="cz.novoj.ibatis.model.User" alias="user"/>
-        <typeAlias type="cz.novoj.ibatis.model.ExternalUser" alias="externalUser"/>
-        <typeAlias type="cz.novoj.ibatis.model.Employee" alias="employee"/>
+        <typeAlias type="cz.novoj.ibatis.model.product.Product" alias="product"/>
+        <typeAlias type="cz.novoj.ibatis.model.product.Group" alias="group"/>
+        <typeAlias type="cz.novoj.ibatis.model.product.Tag" alias="tag"/>
+        <typeAlias type="cz.novoj.ibatis.model.user.User" alias="user"/>
+        <typeAlias type="cz.novoj.ibatis.model.user.ExternalUser" alias="externalUser"/>
+        <typeAlias type="cz.novoj.ibatis.model.user.Employee" alias="employee"/>
     </typeAliases>    
 
     <mappers>

@@ -14,18 +14,18 @@ import static org.junit.Assert.assertNull;
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
  */
-public class ProductMapperTest extends AbstractBaseTest {
+public class OldWayProductDaoTest extends AbstractBaseTest{
 	@Autowired
-	protected ProductMapper productMapper;
+	private OldWayProductDao oldWayProductDao;
 
 	@Test
 	public void testCountProducts() throws Exception {
-		assertEquals(18, productMapper.countProducts());
+		assertEquals(18, oldWayProductDao.countProducts());
 	}
 
 	@Test
 	public void testGetProductById() throws Exception {
-		Product product = productMapper.getProductById(1);
+		Product product = oldWayProductDao.getProductById(1);
 		assertNotNull(product);
 		assertEquals(1, (int)product.getId());
 		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
@@ -36,8 +36,8 @@ public class ProductMapperTest extends AbstractBaseTest {
 
 	@Test
 	public void testGetProductByNameAndGroup() throws Exception {
-		Product product = productMapper.getProductByNameAndGroup("Lenovo ThinkPad 64GB Solid State Disk", "HDD");
-		assertNotNull(product);		
+		Product product = oldWayProductDao.getProductByNameAndGroup("Lenovo ThinkPad 64GB Solid State Disk", "HDD");
+		assertNotNull(product);
 	}
 
 }

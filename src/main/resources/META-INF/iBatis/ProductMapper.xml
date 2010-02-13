@@ -3,23 +3,47 @@
         "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
 <mapper namespace="cz.novoj.ibatis.ProductMapper">
 
+    <resultMap id="thinProduct" type="product">
+        <association property="group" column="idGroup" javaType="group">
+            <id property="id" column="idGroup"/>
+            <result property="name" column="groupName"/>
+        </association>
+    </resultMap>
+
+    <resultMap id="fullProduct" type="product" extends="thinProduct">
+        <!--<collection property="tags"--> 
+    </resultMap>
+    
+    <sql id="groupJoin">
+        inner join productGroup on idGroup = productGroup.id
+    </sql>
+
     <select id="countProducts" resultType="int">
         select count(*) from product
     </select>
 
-    <select id="getProductById" parameterType="int" resultType="product">
-        select * from product where id = #{id}
+    <select id="getProductById" parameterType="int" resultMap="thinProduct">
+        select product.*, productGroup.name as groupName
+          from product 
+          <include refid="groupJoin"/>
+          where id = #{id}
     </select>
 
-    <insert id="createProductGroup" parameterType="group" keyProperty="id">
-        insert into productGroup (name, groupType)
-               values (#{name}, #{groupType})
+    <select id="getProductByNameAndGroup" parameterType="map" resultMap="thinProduct">
+        select * from product
+            <include refid="groupJoin"/>
+            where name = #{name} and productGroup.name = #{group}
+    </select>
+
+    <insert id="createProduct" parameterType="product" keyProperty="id">
+        insert into product (name, idGroup) values (#{name}, #{group.id})
+        <selectKey keyProperty="id" resultType="int">call identity()</selectKey>
     </insert>
 
-    <update id="updateProductGroup" parameterType="group">
-        update productGroup
+    <update id="updateProduct" parameterType="product">
+        update product
             set name = #{name},
-                groupType = #{groupType}
+                idGroup = #{group.id}
             where id = #{id}
     </update>
 

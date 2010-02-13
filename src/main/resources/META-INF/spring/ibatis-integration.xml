@@ -17,6 +17,10 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 
+    <bean id="oldWayProductDao" class="cz.novoj.ibatis.OldWayProductDao">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
 	<bean id="productMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<property name="mapperInterface" value="cz.novoj.ibatis.ProductMapper" />

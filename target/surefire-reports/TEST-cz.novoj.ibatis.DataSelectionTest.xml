@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="25.125" errors="1" skipped="0" tests="2" name="cz.novoj.ibatis.DataSelectionTest">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="env.SYSTEMROOT" value="C:\WINDOWS"/>
+    <property name="localRepository" value="C:\Java\repository"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="env.TVT" value="C:\Program Files\Lenovo"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="env.COMMANDER_DRIVE" value="C:"/>
+    <property name="env.PROMPT" value="$P$G"/>
+    <property name="env.COMMANDER_PATH" value="C:\Program Files\totalcmd"/>
+    <property name="os.name" value="Windows XP"/>
+    <property name="env.FP_NO_HOST_CHECK" value="NO"/>
+    <property name="sun.boot.class.path" value="c:\Java\jdk1.6.0_18\jre\lib\resources.jar;c:\Java\jdk1.6.0_18\jre\lib\rt.jar;c:\Java\jdk1.6.0_18\jre\lib\sunrsasign.jar;c:\Java\jdk1.6.0_18\jre\lib\jsse.jar;c:\Java\jdk1.6.0_18\jre\lib\jce.jar;c:\Java\jdk1.6.0_18\jre\lib\charsets.jar;c:\Java\jdk1.6.0_18\jre\classes"/>
+    <property name="env.COMPUTERNAME" value="JNONB"/>
+    <property name="env.SONICCENTRAL" value="C:\Program Files\Common Files\Sonic Shared\Sonic Central\"/>
+    <property name="env.ALLUSERSPROFILE" value="C:\Documents and Settings\All Users"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.runtime.version" value="1.6.0_18-b07"/>
+    <property name="env.HOMEPATH" value="\Documents and Settings\jno"/>
+    <property name="user.name" value="JNO"/>
+    <property name="env.SWSHARE" value="C:\SWSHARE"/>
+    <property name="env.PATH" value="C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Lenovo;C:\Program Files\Lenovo\Client Security Solution;C:\Program Files\ThinkPad\ConnectUtilities;C:\Program Files\Intel\WiFi\bin\;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Program Files\System Center Operations Manager 2007\;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Program Files\TortoiseSVN\bin;C:\Program Files\CVSNT\;c:\Java\jdk1.6.0_18\bin\;c:\Java\ant\bin\;c:\Java\maven\bin\;"/>
+    <property name="user.language" value="cs"/>
+    <property name="env.WINDIR" value="C:\WINDOWS"/>
+    <property name="sun.boot.library.path" value="c:\Java\jdk1.6.0_18\jre\bin"/>
+    <property name="classworlds.conf" value="c:\Java\maven\bin\..\bin\m2.conf"/>
+    <property name="java.version" value="1.6.0_18"/>
+    <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 15 Stepping 11, GenuineIntel"/>
+    <property name="user.timezone" value="Europe/Prague"/>
+    <property name="env.TEMP" value="C:\DOCUME~1\jno\LOCALS~1\Temp"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.endorsed.dirs" value="c:\Java\jdk1.6.0_18\jre\lib\endorsed"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+    <property name="env.HOMEDRIVE" value="C:"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="env.SYSTEMDRIVE" value="C:"/>
+    <property name="env.TVTPYDIR" value="C:\Program Files\Common Files\Lenovo\Python24"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="user.country" value="CZ"/>
+    <property name="env.BUILD_PROFILE" value="novotnypc"/>
+    <property name="java.home" value="c:\Java\jdk1.6.0_18\jre"/>
+    <property name="env.APPDATA" value="C:\Documents and Settings\jno\Application Data"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="env.OS" value="Windows_NT"/>
+    <property name="os.version" value="5.1"/>
+    <property name="env.JAVA_OPTS" value="-DBUILD_PROFILE=novotnypc"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="16.0-b13"/>
+    <property name="env.TVTCOMMON" value="C:\Program Files\Common Files\Lenovo"/>
+    <property name="env.USERPROFILE" value="C:\Documents and Settings\jno"/>
+    <property name="user.variant" value=""/>
+    <property name="env.JAVA_HOME" value="c:\Java\jdk1.6.0_18\"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="env.TMP" value="C:\DOCUME~1\jno\LOCALS~1\Temp"/>
+    <property name="env.PROGRAMFILES" value="C:\Program Files"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="user.home" value="C:\Documents and Settings\jno"/>
+    <property name="env.COMMONPROGRAMFILES" value="C:\Program Files\Common Files"/>
+    <property name="env.SESSIONNAME" value="Console"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="env.M2_HOME" value="c:\Java\maven\bin\.."/>
+    <property name="env.NUMBER_OF_PROCESSORS" value="2"/>
+    <property name="java.library.path" value="c:\Java\jdk1.6.0_18\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Lenovo;C:\Program Files\Lenovo\Client Security Solution;C:\Program Files\ThinkPad\ConnectUtilities;C:\Program Files\Intel\WiFi\bin\;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Program Files\System Center Operations Manager 2007\;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Program Files\TortoiseSVN\bin;C:\Program Files\CVSNT\;c:\Java\jdk1.6.0_18\bin\;c:\Java\ant\bin\;c:\Java\maven\bin\;"/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="env.USERDNSDOMAIN" value="FORREST.LOCAL"/>
+    <property name="env.PSMODULEPATH" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\"/>
+    <property name="env.SMA" value="C:\Program Files\ThinkVantage\SMA\"/>
+    <property name="env.MAVEN_CMD_LINE_ARGS" value="clean install"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="c:\Java\maven\bin\.."/>
+    <property name="java.class.path" value="c:\Java\maven\bin\..\boot\classworlds-1.1.jar"/>
+    <property name="env.JPDA_TRANSPORT" value="dt_socket"/>
+    <property name="env.CVS_RSH" value="c:\Java\Putty\Plink.exe"/>
+    <property name="env.MAVEN_JAVA_EXE" value="&quot;c:\Java\jdk1.6.0_18\\bin\java.exe&quot;"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="env.LOGONSERVER" value="\\FILE3-NA-SERVER"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="env.PROCESSOR_ARCHITECTURE" value="x86"/>
+    <property name="env.TPCCOMMON" value="C:\PROGRA~1\THINKV~1\PrdCtr"/>
+    <property name="sun.os.patch.level" value="Service Pack 3"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="env.HOME" value="C:\Documents and Settings\jno"/>
+    <property name="surefire.test.class.path" value="C:\Prototypes\iBatisWorkshop\target\test-classes;C:\Prototypes\iBatisWorkshop\target\classes;C:\Java\repository\commons-dbcp\commons-dbcp\1.2.1\commons-dbcp-1.2.1.jar;C:\Java\repository\commons-collections\commons-collections\2.1\commons-collections-2.1.jar;C:\Java\repository\commons-pool\commons-pool\1.2\commons-pool-1.2.jar;C:\Java\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Java\repository\xerces\xercesImpl\2.0.2\xercesImpl-2.0.2.jar;C:\Java\repository\org\springframework\spring-core\3.0.0.RELEASE\spring-core-3.0.0.RELEASE.jar;C:\Java\repository\org\springframework\spring-asm\3.0.0.RELEASE\spring-asm-3.0.0.RELEASE.jar;C:\Java\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Java\repository\org\springframework\spring-jdbc\3.0.0.RELEASE\spring-jdbc-3.0.0.RELEASE.jar;C:\Java\repository\org\springframework\spring-beans\3.0.0.RELEASE\spring-beans-3.0.0.RELEASE.jar;C:\Java\repository\org\springframework\spring-tx\3.0.0.RELEASE\spring-tx-3.0.0.RELEASE.jar;C:\Java\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Java\repository\org\springframework\spring-aop\3.0.0.RELEASE\spring-aop-3.0.0.RELEASE.jar;C:\Java\repository\org\springframework\spring-context\3.0.0.RELEASE\spring-context-3.0.0.RELEASE.jar;C:\Java\repository\org\springframework\spring-expression\3.0.0.RELEASE\spring-expression-3.0.0.RELEASE.jar;C:\Java\repository\hsqldb\hsqldb\1.8.0.10\hsqldb-1.8.0.10.jar;C:\Java\repository\org\apache\ibatis\ibatis-sqlmap\3.0-beta-8\ibatis-sqlmap-3.0-beta-8.jar;C:\Java\repository\cglib\cglib-nodep\2.2\cglib-nodep-2.2.jar;C:\Java\repository\commons-io\commons-io\1.4\commons-io-1.4.jar;C:\Java\repository\org\springframework\spring-test\2.5.6\spring-test-2.5.6.jar;C:\Java\repository\junit\junit\4.4\junit-4.4.jar;"/>
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\jno\LOCALS~1\Temp\"/>
+    <property name="env.PROCESSOR_REVISION" value="0f0b"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="env.MAVEN_OPTS" value="-Xms64m -Xmx256m"/>
+    <property name="env.COMSPEC" value="C:\WINDOWS\system32\cmd.exe"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.ext.dirs" value="c:\Java\jdk1.6.0_18\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="C:\Prototypes\iBatisWorkshop"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="env.CLASSWORLDS_JAR" value="&quot;c:\Java\maven\bin\..\boot\classworlds-1.1.jar&quot;"/>
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.PSC1;.PSC1"/>
+    <property name="env.JPDA_ADDRESS" value="5005"/>
+    <property name="basedir" value="C:\Prototypes\iBatisWorkshop"/>
+    <property name="env.ERROR_CODE" value="0"/>
+    <property name="env.USERNAME" value="JNO"/>
+    <property name="file.encoding" value="Cp1250"/>
+    <property name="env.RR" value="C:\Program Files\Lenovo\Rescue and Recovery"/>
+    <property name="env.USERDOMAIN" value="FORREST"/>
+    <property name="env.COMMANDER_INI" value="C:\WINDOWS\WINCMD.INI"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="env.PROCESSOR_LEVEL" value="6"/>
+  </properties>
+  <testcase time="0.875" classname="cz.novoj.ibatis.DataSelectionTest" name="testCountProducts"/>
+  <testcase time="21.234" classname="cz.novoj.ibatis.DataSelectionTest" name="testCountProductsSpringVariant">
+    <error message="
+### Error querying database.  Cause: org.apache.commons.dbcp.SQLNestedException: Could not retrieve connection info from pool
+### The error may exist in cz/novoj/ibatis/ProductManager.java (best guess)
+### The error may involve cz.novoj.ibatis.ProductManager.countProducts
+### The error occurred while executing a query
+### SQL: select count(*) from product
+### Cause: org.apache.commons.dbcp.SQLNestedException: Could not retrieve connection info from pool" type="org.apache.ibatis.exceptions.IbatisException">org.apache.ibatis.exceptions.IbatisException: 
+### Error querying database.  Cause: org.apache.commons.dbcp.SQLNestedException: Could not retrieve connection info from pool
+### The error may exist in cz/novoj/ibatis/ProductManager.java (best guess)
+### The error may involve cz.novoj.ibatis.ProductManager.countProducts
+### The error occurred while executing a query
+### SQL: select count(*) from product
+### Cause: org.apache.commons.dbcp.SQLNestedException: Could not retrieve connection info from pool
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:8)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:61)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:53)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:38)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:18)
+	at $Proxy14.countProducts(Unknown Source)
+	at cz.novoj.ibatis.DataSelectionTest.testCountProductsSpringVariant(DataSelectionTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.test.context.junit4.SpringTestMethod.invoke(SpringTestMethod.java:160)
+	at org.springframework.test.context.junit4.SpringMethodRoadie.runTestMethod(SpringMethodRoadie.java:233)
+	at org.springframework.test.context.junit4.SpringMethodRoadie$RunBeforesThenTestThenAfters.run(SpringMethodRoadie.java:333)
+	at org.springframework.test.context.junit4.SpringMethodRoadie.runWithRepetitions(SpringMethodRoadie.java:217)
+	at org.springframework.test.context.junit4.SpringMethodRoadie.runTest(SpringMethodRoadie.java:197)
+	at org.springframework.test.context.junit4.SpringMethodRoadie.run(SpringMethodRoadie.java:143)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.invokeTestMethod(SpringJUnit4ClassRunner.java:160)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:44)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:27)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:37)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:42)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:97)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:338)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:997)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Could not retrieve connection info from pool
+	at org.apache.commons.dbcp.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:169)
+	at org.apache.commons.dbcp.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:631)
+	at org.apache.commons.dbcp.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:615)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:113)
+	at org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy$TransactionAwareInvocationHandler.invoke(TransactionAwareDataSourceProxy.java:213)
+	at $Proxy13.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:39)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:55)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:40)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:90)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:68)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:59)
+	... 33 more
+Caused by: java.util.NoSuchElementException: Timeout waiting for idle object
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:770)
+	at org.apache.commons.dbcp.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:165)
+	... 46 more
+</error>
+    <system-err>Error executing: CREATE TABLE user (   id INT NOT NULL IDENTITY,   login VARCHAR(80) NOT NULL,   firstName VARCHAR(120) NULL,   lastName VARCHAR(120) NULL,   birthDate DATE NULL,   state SMALLINT NULL,   type SMALLINT NOT NULL,   employeeNumber VARCHAR(5),   companyName VARCHAR(80),   companyIdNumber VARCHAR(11),   CONSTRAINT pk_user PRIMARY KEY (id) ) .  Cause: java.sql.SQLException: Table already exists: USER in statement [CREATE TABLE user]
+Error executing: CREATE TABLE role (   id INT NOT NULL IDENTITY,   systemName VARCHAR(80) NOT NULL,   humanName VARCHAR(120) NULL,   CONSTRAINT pk_role PRIMARY KEY (id) ) .  Cause: java.sql.SQLException: Table already exists: ROLE in statement [CREATE TABLE role]
+Error executing: CREATE TABLE userRole (   id INT NOT NULL IDENTITY,   idUser INT NOT NULL,   idRole INT NOT NULL,   CONSTRAINT pk_userRole PRIMARY KEY (id),   CONSTRAINT fk_userRole_user FOREIGN KEY (idUser)   REFERENCES user (id),   CONSTRAINT fk_userRole_role FOREIGN KEY (idRole)   REFERENCES role (id) ) .  Cause: java.sql.SQLException: Table already exists: USERROLE in statement [CREATE TABLE userRole]
+Error executing: CREATE TABLE productGroup (   id INT NOT NULL IDENTITY,   name varchar(50) NOT NULL,   groupType varchar(30) NOT NULL,   CONSTRAINT pk_productGroup PRIMARY KEY (id) ) .  Cause: java.sql.SQLException: Table already exists: PRODUCTGROUP in statement [CREATE TABLE productGroup]
+Error executing: CREATE TABLE tag (   id INT NOT NULL IDENTITY,   name varchar(50) NOT NULL,   CONSTRAINT pk_tag PRIMARY KEY (id) ) .  Cause: java.sql.SQLException: Table already exists: TAG in statement [CREATE TABLE tag]
+Error executing: CREATE TABLE product (   id INT NOT NULL IDENTITY,   name varchar(100) NOT NULL,   idGroup INT NOT NULL,   CONSTRAINT pk_product PRIMARY KEY (id),   CONSTRAINT fk_product_group FOREIGN KEY (idGroup)   REFERENCES productGroup (id) ) .  Cause: java.sql.SQLException: Table already exists: PRODUCT in statement [CREATE TABLE product]
+Error executing: CREATE TABLE productTag (   id INT NOT NULL IDENTITY,   idProduct INT NOT NULL,   idTag INT NOT NULL,   CONSTRAINT pk_productTag PRIMARY KEY (id),   CONSTRAINT fk_productTag_tag FOREIGN KEY (idTag)   REFERENCES tag (id),   CONSTRAINT fk_productTag_product FOREIGN KEY (idProduct)   REFERENCES product (id) ) .  Cause: java.sql.SQLException: Table already exists: PRODUCTTAG in statement [CREATE TABLE productTag]
+Error executing: INSERT INTO user values (1, &apos;novoj&apos;, &apos;Jan&apos;, &apos;NovotnĂ˝&apos;, &apos;1978-05-05&apos;, 1, 0, &apos;00012&apos;, null, null) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USER: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO user values (2, &apos;humr&apos;, &apos;Petr&apos;, &apos;HumornĂ˝&apos;, &apos;1980-11-08&apos;, 1, 0, &apos;00016&apos;, null, null) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USER: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO user values (3, &apos;fik&apos;, &apos;Max&apos;, &apos;Fikejs&apos;, &apos;1969-02-01&apos;, 1, 0, &apos;00018&apos;, null, null) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USER: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO user values (4, &apos;rodrigez&apos;, &apos;Roman&apos;, &apos;GeĹ?a&apos;, &apos;1981-09-17&apos;, 0, 1, null, &apos;Fischer Scientific&apos;, &apos;129837281&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USER: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO user values (5, &apos;igen&apos;, &apos;Ivan&apos;, &apos;PolĂˇk&apos;, &apos;1977-05-05&apos;, 1, 1, null, &apos;Telefonica O2&apos;, &apos;4563342132&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USER: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO user values (6, &apos;dolar&apos;, &apos;Dominik&apos;, &apos;Linhart&apos;, &apos;1988-09-21&apos;, 1, 0, &apos;00012&apos;, null, null) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USER: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO user values (7, &apos;janko&apos;, &apos;Jan&apos;, &apos;LaĹˇĂˇk&apos;, &apos;1982-07-02&apos;, 1, 1, null, &apos;Moeller&apos;, &apos;2132443345&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USER: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO user values (8, &apos;dominator&apos;, &apos;Dominik&apos;, &apos;HaĹˇek&apos;, &apos;1973-04-01&apos;, 0, 1, null, &apos;Moeller&apos;, &apos;2132443345&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USER: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO user values (9, &apos;veskic&apos;, &apos;Martin&apos;, &apos;Veska&apos;, &apos;1979-07-01&apos;, 1, 0, &apos;00006&apos;, null, null) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USER: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO user values (10, &apos;jety&apos;, &apos;Pavel&apos;, &apos;JetenskĂ˝&apos;, &apos;1978-30-08&apos;, 1, 0, null, &apos;Telefonica O2&apos;, &apos;4563342132&apos;) .  Cause: java.sql.SQLException: Wrong data type: java.lang.IllegalArgumentException
+Error executing: INSERT INTO role values (1, &apos;standardUser&apos;, &apos;StandardnĂ­ uĹľivatel&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_ROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO role values (2, &apos;administrator&apos;, &apos;AdministrĂˇtor&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_ROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO role values (3, &apos;powerUser&apos;, &apos;TechnickĂˇ sprĂˇva&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_ROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO userRole values (1, 1, 3) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USERROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO userRole values (2, 2, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USERROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO userRole values (3, 3, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USERROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO userRole values (4, 4, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USERROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO userRole values (5, 5, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USERROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO userRole values (6, 6, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USERROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO userRole values (7, 7, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USERROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO userRole values (8, 8, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USERROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO userRole values (9, 9, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_USERROLE: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO userRole values (10, 10, 3) .  Cause: java.sql.SQLException: Integrity constraint violation - no parent FK_USERROLE_USER table: USER
+Error executing: INSERT INTO productGroup values (1, &apos;HDD&apos;, &apos;HARDWARE&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTGROUP: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productGroup values (2, &apos;OperaÄŤnĂ­ systĂ©my&apos;, &apos;SOFTWARE&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTGROUP: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productGroup values (3, &apos;Monitory&apos;, &apos;HARDWARE&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTGROUP: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productGroup values (4, &apos;VĂ˝vojovĂˇ prostĹ™edĂ­&apos;, &apos;SOFTWARE&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTGROUP: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (1, &apos;Samsung&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (2, &apos;Lenovo&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (3, &apos;HP&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (4, &apos;SSD&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (5, &apos;SATA&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (6, &apos;Microsoft&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (7, &apos;Apple&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (8, &apos;JetBrains&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (9, &apos;Oracle Sun&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (10, &apos;Java&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO tag values (11, &apos;.NET&apos;) .  Cause: java.sql.SQLException: Violation of unique constraint PK_TAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (1, &apos;Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive&apos;, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (2, &apos;Samsung HDD 750GB Samsung SpinPointF1 32MB SATAII RAID 3RZ&apos;, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (3, &apos;Samsung HDD 160GB Samsung SpinPoint F1 SATAII/300 3RZ&apos;, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (4, &apos;Lenovo ThinkPad 64GB Solid State Disk&apos;, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (5, &apos;HP 120GB 3G SATA 2.5in QR MDL SSD&apos;, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (6, &apos;Apple Mac OS X Snow Leopard 10.6 Family Pack&apos;, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (7, &apos;Microsoft OEM Windows 7 Home Premium 32-bit Czech&apos;, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (8, &apos;Microsoft OEM Windows 7 Professional 64-bit Czech&apos;, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (9, &apos;Microsoft OEM Windows 7 Ultimate 32-bit Czech&apos;, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (10, &apos;Samsung SyncMaster XL30&apos;, 3) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (11, &apos;Samsung SyncMaster 305T PLUS&apos;, 3) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (12, &apos;Apple Cinema Display 30&quot; HD&apos;, 3) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (13, &apos;Lenovo L2251x&apos;, 3) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (14, &apos;Lenovo L2250p&apos;, 3) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (15, &apos;Eclipse&apos;, 4) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (16, &apos;Netbeans&apos;, 4) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (17, &apos;IntelliJ Idea&apos;, 4) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO product values (18, &apos;Visual Studio&apos;, 4) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCT: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (1, 1, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (2, 1, 5) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (3, 2, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (4, 2, 5) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (5, 3, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (6, 3, 5) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (7, 4, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (8, 4, 4) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (9, 5, 3) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (10, 5, 4) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (11, 6, 7) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (12, 7, 6) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (13, 8, 6) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (14, 9, 6) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (15, 10, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (16, 11, 1) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (17, 12, 7) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (18, 13, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (19, 14, 2) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (20, 15, 10) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (21, 16, 10) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (22, 16, 9) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (23, 17, 10) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (24, 17, 8) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (25, 18, 6) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+Error executing: INSERT INTO productTag values  (26, 18, 11) .  Cause: java.sql.SQLException: Violation of unique constraint PK_PRODUCTTAG: duplicate value(s) for column(s) ID
+</system-err>
+  </testcase>
+</testsuite>

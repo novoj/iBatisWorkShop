@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------
+Test set: cz.novoj.ibatis.HSqlConnectTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.015 sec <<< FAILURE!
+testTablesExist(cz.novoj.ibatis.HSqlConnectTest)  Time elapsed: 10 sec  <<< ERROR!
+org.apache.ibatis.jdbc.RuntimeSqlException: Could not set AutoCommit to true. Cause: org.apache.commons.dbcp.SQLNestedException: Could not retrieve connection info from pool
+	at org.apache.ibatis.jdbc.ScriptRunner.setAutoCommit(ScriptRunner.java:122)
+	at org.apache.ibatis.jdbc.ScriptRunner.runScript(ScriptRunner.java:57)
+	at cz.novoj.ibatis.AbstractBaseTest.runScript(AbstractBaseTest.java:64)
+	at cz.novoj.ibatis.AbstractBaseTest.runScript(AbstractBaseTest.java:54)
+	at cz.novoj.ibatis.AbstractBaseTest.setupDatabase(AbstractBaseTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.test.context.junit4.SpringMethodRoadie.runBefores(SpringMethodRoadie.java:273)
+	at org.springframework.test.context.junit4.SpringMethodRoadie$RunBeforesThenTestThenAfters.run(SpringMethodRoadie.java:332)
+	at org.springframework.test.context.junit4.SpringMethodRoadie.runWithRepetitions(SpringMethodRoadie.java:217)
+	at org.springframework.test.context.junit4.SpringMethodRoadie.runTest(SpringMethodRoadie.java:197)
+	at org.springframework.test.context.junit4.SpringMethodRoadie.run(SpringMethodRoadie.java:143)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.invokeTestMethod(SpringJUnit4ClassRunner.java:160)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:51)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:44)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:27)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:37)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:42)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:97)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:338)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:997)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Could not retrieve connection info from pool
+	at org.apache.commons.dbcp.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:169)
+	at org.apache.commons.dbcp.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:631)
+	at org.apache.commons.dbcp.datasources.InstanceKeyDataSource.getConnection(InstanceKeyDataSource.java:615)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:113)
+	at org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy$TransactionAwareInvocationHandler.invoke(TransactionAwareDataSourceProxy.java:213)
+	at $Proxy13.getAutoCommit(Unknown Source)
+	at org.apache.ibatis.jdbc.ScriptRunner.setAutoCommit(ScriptRunner.java:118)
+	... 30 more
+Caused by: java.util.NoSuchElementException: Timeout waiting for idle object
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:770)
+	at org.apache.commons.dbcp.datasources.SharedPoolDataSource.getPooledConnectionAndInfo(SharedPoolDataSource.java:165)
+	... 36 more
+

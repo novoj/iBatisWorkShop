@@ -11,14 +11,14 @@ import cz.novoj.ibatis.model.product.Tag;
 @SuppressWarnings({"InterfaceNeverImplemented"})
 public interface ProductTagMapper {
 
-	void createProductTag(Tag tag);
+	void createTag(Tag tag);
 
-	void updateProductTag(Tag tag);
+	void updateTag(Tag tag);
 
 	int deleteTag(int id);
 
 	int countTags();
 
 	Tag getTagById(int id);
-	
+
 }

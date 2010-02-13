@@ -18,6 +18,10 @@
             where id = #{id}
     </update>
 
+    <delete id="deleteGroup" parameterType="int">
+        delete from productGroup where id = #{id}
+    </delete>
+
     <select id="countGroups" resultType="int">
         select count(*) from productGroup
     </select>

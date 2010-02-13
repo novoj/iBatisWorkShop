@@ -28,6 +28,7 @@ INSERT INTO productGroup values (1, 'HDD', 'HARDWARE');
 INSERT INTO productGroup values (2, 'Operační systémy', 'SOFTWARE');
 INSERT INTO productGroup values (3, 'Monitory', 'HARDWARE');
 INSERT INTO productGroup values (4, 'Vývojová prostředí', 'SOFTWARE');
+INSERT INTO productGroup values (5, 'Nepoužitá skupina', 'SOFTWARE');
 
 INSERT INTO tag values (1, 'Samsung');
 INSERT INTO tag values (2, 'Lenovo');
@@ -40,6 +41,7 @@ INSERT INTO tag values (8, 'JetBrains');
 INSERT INTO tag values (9, 'Oracle Sun');
 INSERT INTO tag values (10, 'Java');
 INSERT INTO tag values (11, '.NET');
+INSERT INTO tag values (12, 'Nepoužitý tag');
 
 INSERT INTO product values (1, 'Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive', 1);
 INSERT INTO product values (2, 'Samsung HDD 750GB Samsung SpinPointF1 32MB SATAII RAID 3RZ', 1);

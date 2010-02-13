@@ -19,6 +19,6 @@ public interface ProductGroupMapper {
 
 	int countGroups();
 
-	Group getGroupById(int id);
+	Group getGroupById(int id);	
 
 }

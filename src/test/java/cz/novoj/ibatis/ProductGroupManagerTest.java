@@ -19,7 +19,7 @@ public class ProductGroupManagerTest extends AbstractBaseTest {
 
 	@Test
 	public void testCountGroups() throws Exception {
-		assertEquals(4, productGroupMapper.countGroups());
+		assertEquals(5, productGroupMapper.countGroups());
 	}
 
 	@Test
@@ -49,6 +49,12 @@ public class ProductGroupManagerTest extends AbstractBaseTest {
 
 		Group loadedGroup = productGroupMapper.getGroupById(1);
 		assertEquals(group, loadedGroup);
+	}
+
+	@Test
+	public void testDeleteTag() throws Exception {
+		productGroupMapper.deleteGroup(5);
+		assertEquals(4, productGroupMapper.countGroups());
 	}
 
 }

@@ -19,7 +19,7 @@ public class ProductTagManagerTest extends AbstractBaseTest {
 
 	@Test
 	public void testCountProductTags() throws Exception {
-		assertEquals(11, productTagMapper.countTags());
+		assertEquals(12, productTagMapper.countTags());
 	}
 
 	@Test
@@ -33,7 +33,7 @@ public class ProductTagManagerTest extends AbstractBaseTest {
 	@Test
 	public void testCreateTag() throws Exception {
 		Tag tag = new Tag("můjNovýTag");
-		productTagMapper.createProductTag(tag);
+		productTagMapper.createTag(tag);
 		assertNotNull(tag.getId());
 
 		Tag loadedTag = productTagMapper.getTagById(tag.getId());
@@ -44,10 +44,15 @@ public class ProductTagManagerTest extends AbstractBaseTest {
 	public void testUpdateTag() throws Exception {
 		Tag tag = productTagMapper.getTagById(1);
 		tag.setName("úplně nové jméno");
-		productTagMapper.updateProductTag(tag);
+		productTagMapper.updateTag(tag);
 
 		Tag loadedTag = productTagMapper.getTagById(1);
 		assertEquals(tag, loadedTag);
 	}
 
+	@Test
+	public void testDeleteTag() throws Exception {
+		productTagMapper.deleteTag(12);
+		assertEquals(11, productTagMapper.countTags());
+	}
 }

@@ -1,5 +1,6 @@
 package cz.novoj.ibatis;
 
+import cz.novoj.ibatis.model.product.ImmutableTag;
 import cz.novoj.ibatis.model.product.Tag;
 
 import java.util.List;
@@ -22,10 +23,12 @@ public interface ProductTagMapper {
 
 	int countTags();
 
-	Tag getTagById(int id);	
+	Tag getTagById(int id);
+
+	ImmutableTag getImmutableTagById(int id);
 
 	List<Tag> getOrderedTags(String column);
 
-	Map<String, Object> getAverageMinMaxLenthtOfTag();
+	Map<String, Object> getAverageMinMaxLengthOfTag();
 
 }

@@ -1,5 +1,6 @@
 package cz.novoj.ibatis;
 
+import cz.novoj.ibatis.model.product.ImmutableTag;
 import cz.novoj.ibatis.model.product.Tag;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,16 +23,24 @@ public class ProductTagMapperTest extends AbstractBaseTest {
 	private ProductTagMapper productTagMapper;
 
 	@Test
-	public void testCountProductTags() throws Exception {
+	public void testCountTags() throws Exception {
 		assertEquals(12, productTagMapper.countTags());
 	}
 
 	@Test
-	public void testGetProductById() throws Exception {
+	public void testGetTagById() throws Exception {
 		Tag tag = productTagMapper.getTagById(1);
 		assertNotNull(tag);
 		assertEquals(1, (int)tag.getId());
 		assertEquals("Samsung", tag.getName());		
+	}
+
+	@Test
+	public void testGetImmutableTagById() throws Exception {
+		ImmutableTag tag = productTagMapper.getImmutableTagById(1);
+		assertNotNull(tag);
+		assertEquals(1, (int)tag.getId());
+		assertEquals("Samsung", tag.getName());
 	}
 
 	@Test
@@ -70,7 +79,7 @@ public class ProductTagMapperTest extends AbstractBaseTest {
 
 	@Test
 	public void testGetCalculationsInHashMap() throws Exception {
-		Map<String,Object> result = productTagMapper.getAverageMinMaxLenthtOfTag();
+		Map<String,Object> result = productTagMapper.getAverageMinMaxLengthOfTag();
 		assertFalse(result.isEmpty());
 		assertEquals(6, ((Number)result.get("AVERAGELENGTH")).intValue());
 		assertEquals(2, ((Number)result.get("MINLENGTH")).intValue());

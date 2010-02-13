@@ -1,4 +1,3 @@
-- immutable POJOs
 - lazy loading
 - caching
 - write your own TypeHandler - enum with ordinal()
@@ -12,6 +11,10 @@
 SEQUENCE
 - init
 - tags
+    - basic selection
+    - CUD operations
+    - selecting into a map
+    - immutable POJOs
 - groups
 - product
 - users

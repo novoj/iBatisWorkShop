@@ -25,18 +25,29 @@
 
     <select id="getTagById" parameterType="int" resultType="tag">
         select * from tag where id = #{value}
-    </select>    
+    </select>
 
     <select id="getOrderedTags" parameterType="string" resultType="tag">
         select * from tag order by ${value} asc
     </select>
 
-    <select id="getAverageMinMaxLenthtOfTag" resultType="hashmap">
+    <select id="getAverageMinMaxLengthOfTag" resultType="hashmap">
         select
             avg(length(name)) as averageLength,
             min(length(name)) as minLength,
             max(length(name)) as maxLength
         from tag
+    </select>
+
+    <resultMap id="immutableTag" type="cz.novoj.ibatis.model.product.ImmutableTag">
+        <constructor>
+            <idArg column="id" javaType="int"/>
+            <arg column="name" javaType="string"/>
+        </constructor>
+    </resultMap>
+
+    <select id="getImmutableTagById" parameterType="int" resultMap="immutableTag">
+        select * from tag where id = #{value}
     </select>
 
 </mapper>

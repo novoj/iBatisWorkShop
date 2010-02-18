@@ -5,7 +5,7 @@ CREATE TABLE user (
   lastName VARCHAR(120) NULL,
   birthDate DATE NULL,
   state SMALLINT NULL,
-  type SMALLINT NOT NULL,
+  type VARCHAR(15) NOT NULL,
   employeeNumber VARCHAR(5),
   companyName VARCHAR(80),
   companyIdNumber VARCHAR(11),

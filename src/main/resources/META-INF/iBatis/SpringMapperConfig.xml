@@ -20,7 +20,12 @@
         <typeAlias type="cz.novoj.ibatis.model.user.User" alias="user"/>
         <typeAlias type="cz.novoj.ibatis.model.user.ExternalUser" alias="externalUser"/>
         <typeAlias type="cz.novoj.ibatis.model.user.Employee" alias="employee"/>
-    </typeAliases>    
+    </typeAliases>
+
+    <typeHandlers>
+        <typeHandler javaType="cz.novoj.ibatis.model.user.UserType" handler="cz.novoj.ibatis.model.user.UserTypeEnumHandler"/>
+        <typeHandler javaType="cz.novoj.ibatis.model.user.UserState" handler="cz.novoj.ibatis.model.user.UserStateEnumHandler"/>
+    </typeHandlers>
 
     <mappers>
         <mapper resource="META-INF/iBatis/mapper/ProductMapper.xml"/>

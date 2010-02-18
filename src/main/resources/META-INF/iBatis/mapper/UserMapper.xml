@@ -3,4 +3,31 @@
         "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
 <mapper namespace="cz.novoj.ibatis.UserMapper">
 
+    <resultMap id="user" type="cz.novoj.ibatis.model.user.Employee">
+        <id property="id"/>
+        <result property="login"/>
+        <result property="firstName"/>
+        <result property="lastName"/>
+        <result property="birthDate"/>
+        <result property="state"/>
+        <result property="type"/>
+        <discriminator javaType="string" column="type">
+            <case value="EMPLOYEE" resultType="employee">
+                <result property="employeeNumber"/>
+            </case>
+            <case value="EXTERNAL" resultType="externalUser">
+                <result property="companyName"/>
+                <result property="companyIdNumber"/>
+            </case>
+        </discriminator>
+    </resultMap>
+
+    <select id="getUserById" parameterType="int" resultMap="user">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="getUsers" resultMap="user">
+        select * from user
+    </select>
+
 </mapper>

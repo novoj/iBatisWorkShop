@@ -1,13 +1,13 @@
-INSERT INTO user values (1, 'novoj', 'Jan', 'Novotný', '1978-05-05', 1, 0, '00012', null, null);
-INSERT INTO user values (2, 'humr', 'Petr', 'Humorný', '1980-11-08', 1, 0, '00016', null, null);
-INSERT INTO user values (3, 'fik', 'Max', 'Fikejs', '1969-02-01', 1, 0, '00018', null, null);
-INSERT INTO user values (4, 'rodrigez', 'Roman', 'Geňa', '1981-09-17', 0, 1, null, 'Fischer Scientific', '129837281');
-INSERT INTO user values (5, 'igen', 'Ivan', 'Polák', '1977-05-05', 1, 1, null, 'Telefonica O2', '4563342132');
-INSERT INTO user values (6, 'dolar', 'Dominik', 'Linhart', '1988-09-21', 1, 0, '00012', null, null);
-INSERT INTO user values (7, 'janko', 'Jan', 'Lašák', '1982-07-02', 1, 1, null, 'Moeller', '2132443345');
-INSERT INTO user values (8, 'dominator', 'Dominik', 'Hašek', '1973-04-01', 0, 1, null, 'Moeller', '2132443345');
-INSERT INTO user values (9, 'veskic', 'Martin', 'Veska', '1979-07-01', 1, 0, '00006', null, null);
-INSERT INTO user values (10, 'jety', 'Pavel', 'Jetenský', '1978-08-20', 1, 0, null, 'Telefonica O2', '4563342132');
+INSERT INTO user values (1, 'novoj', 'Jan', 'Novotný', '1978-05-05', 1, 'EMPLOYEE', '00012', null, null);
+INSERT INTO user values (2, 'humr', 'Petr', 'Humorný', '1980-11-08', 1, 'EMPLOYEE', '00016', null, null);
+INSERT INTO user values (3, 'fik', 'Max', 'Fikejs', '1969-02-01', 1, 'EMPLOYEE', '00018', null, null);
+INSERT INTO user values (4, 'rodrigez', 'Roman', 'Geňa', '1981-09-17', 0, 'EXTERNAL', null, 'Fischer Scientific', '129837281');
+INSERT INTO user values (5, 'igen', 'Ivan', 'Polák', '1977-05-05', 1, 'EXTERNAL', null, 'Telefonica O2', '4563342132');
+INSERT INTO user values (6, 'dolar', 'Dominik', 'Linhart', '1988-09-21', 1, 'EMPLOYEE', '00012', null, null);
+INSERT INTO user values (7, 'janko', 'Jan', 'Lašák', '1982-07-02', 1, 'EXTERNAL', null, 'Moeller', '2132443345');
+INSERT INTO user values (8, 'dominator', 'Dominik', 'Hašek', '1973-04-01', 0, 'EXTERNAL', null, 'Moeller', '2132443345');
+INSERT INTO user values (9, 'veskic', 'Martin', 'Veska', '1979-07-01', 1, 'EMPLOYEE', '00006', null, null);
+INSERT INTO user values (10, 'jety', 'Pavel', 'Jetenský', '1978-08-20', 1, 'EXTERNAL', null, 'Telefonica O2', '4563342132');
 
 INSERT INTO role values (1, 'standardUser', 'Standardní uživatel');
 INSERT INTO role values (2, 'administrator', 'Administrátor');

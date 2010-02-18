@@ -10,7 +10,7 @@
         <setting name="lazyLoadingEnabled" value="true"/>
         <setting name="multipleResultSetsEnabled" value="true"/>
         <setting name="useColumnLabel" value="true"/>
-        <setting name="useGeneratedKeys" value="true"/>
+        <setting name="useGeneratedKeys" value="false"/>
     </settings>
 
     <typeAliases>
@@ -21,6 +21,11 @@
         <typeAlias type="cz.novoj.ibatis.model.user.ExternalUser" alias="externalUser"/>
         <typeAlias type="cz.novoj.ibatis.model.user.Employee" alias="employee"/>
     </typeAliases>
+
+    <typeHandlers>
+        <typeHandler javaType="cz.novoj.ibatis.model.user.UserType" handler="cz.novoj.ibatis.model.user.UserTypeEnumHandler"/>
+        <typeHandler javaType="cz.novoj.ibatis.model.user.UserState" handler="cz.novoj.ibatis.model.user.UserStateEnumHandler"/>
+    </typeHandlers>
 
     <environments default="development">
         <environment id="development">

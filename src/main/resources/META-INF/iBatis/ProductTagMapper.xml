@@ -27,6 +27,11 @@
         select * from tag where id = #{value}
     </select>
 
+    <select id="getProductTags" parameterType="int" resultType="tag">
+        select * from tag inner join productTag on productTag.idTag = tag.id
+          where productTag.idProduct = #{value}
+    </select>
+
     <select id="getOrderedTags" parameterType="string" resultType="tag">
         select * from tag order by ${value} asc
     </select>

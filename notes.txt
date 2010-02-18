@@ -22,10 +22,9 @@ SEQUENCE
 - product
     - association
     - collections
+    - lazy loading
     - TODO conditional
-    - TODO annotations
-    - TODO lazy loading
-    - TODO caching
+    - annotations
 - users
     - TODO discriminator
     - TODO typehandlers

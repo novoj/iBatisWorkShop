@@ -13,11 +13,23 @@
         </association>
     </resultMap>
 
+    <resultMap id="thinProductLazyLoaded" type="product">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <association property="group" column="idGroup" javaType="group"
+                     select="cz.novoj.ibatis.ProductGroupMapper.getGroupById"/>
+    </resultMap>
+
     <resultMap id="fullProduct" type="product" extends="thinProduct">
         <collection property="tags" ofType="tag">
             <id property="id" column="idTag"/>
             <result property="name" column="tagName"/>
         </collection>
+    </resultMap>
+
+    <resultMap id="fullProductLazyLoaded" type="product" extends="thinProductLazyLoaded">
+        <collection property="tags" ofType="tag" column="idProduct"
+                    select="cz.novoj.ibatis.ProductTagMapper.getProductTags"/>            
     </resultMap>
     
     <sql id="groupJoinColumns">
@@ -41,12 +53,20 @@
         select count(*) from product
     </select>
 
+    <select id="getProducts" resultMap="thinProductLazyLoaded">
+         select * from product
+    </select>
+
     <select id="getProductById" parameterType="int" resultMap="thinProduct">
         select product.*
           <include refid="groupJoinColumns"/>  
           from product 
           <include refid="groupJoin"/>
           where id = #{id}
+    </select>
+
+    <select id="getLazyProductById" parameterType="int" resultMap="thinProductLazyLoaded">
+        select * from product where id = #{id}
     </select>
 
     <select id="getFullProductById" parameterType="int" resultMap="fullProduct">
@@ -57,6 +77,10 @@
           <include refid="groupJoin"/>
           <include refid="tagJoin"/>
           where id = #{id}
+    </select>
+
+    <select id="getFullLazyProductById" parameterType="int" resultMap="fullProductLazyLoaded">
+        select *, id as idProduct from product where id = #{id}
     </select>
 
     <select id="getProductByNameAndGroup" parameterType="map" resultMap="thinProduct">

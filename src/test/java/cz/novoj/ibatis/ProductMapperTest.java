@@ -2,8 +2,11 @@ package cz.novoj.ibatis;
 
 import cz.novoj.ibatis.model.product.Group;
 import cz.novoj.ibatis.model.product.Product;
+import org.apache.ibatis.session.RowBounds;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -25,8 +28,32 @@ public class ProductMapperTest extends AbstractBaseTest {
 	}
 
 	@Test
+	public void testGetProducts() throws Exception {
+		List<Product> products = productMapper.getProducts();
+		assertEquals(18, products.size());
+	}
+
+	@Test
+	public void testGetProductsRowBounds() throws Exception {
+		List<Product> products = productMapper.getProducts(new RowBounds(5, 2));
+		assertEquals(2, products.size());
+	}
+
+	@Test
 	public void testGetProductById() throws Exception {
 		Product product = productMapper.getProductById(1);
+		assertNotNull(product);
+		assertEquals(1, (int)product.getId());
+		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
+		assertNotNull(product.getGroup());
+		assertEquals("HDD", product.getGroup().getName());
+		assertEquals("HARDWARE", product.getGroup().getGroupType());
+		assertNull(product.getTags());
+	}
+
+	@Test
+	public void testGetLazyProductById() throws Exception {
+		Product product = productMapper.getLazyProductById(1);
 		assertNotNull(product);
 		assertEquals(1, (int)product.getId());
 		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
@@ -40,6 +67,21 @@ public class ProductMapperTest extends AbstractBaseTest {
 	public void testGetFullProductById() throws Exception {
 		Product product = productMapper.getFullProductById(1);
 		assertNotNull(product);
+		assertEquals(1, (int)product.getId());
+		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
+		assertNotNull(product.getGroup());
+		assertEquals("HDD", product.getGroup().getName());
+		assertEquals("HARDWARE", product.getGroup().getGroupType());
+		assertNotNull(product.getTags());
+		assertEquals(2, product.getTags().size());
+		assertEquals("Lenovo", product.getTags().get(0).getName());
+		assertEquals("SATA", product.getTags().get(1).getName());
+	}
+
+	@Test
+	public void testGetFullLazyProductById() throws Exception {
+		Product product = productMapper.getFullLazyProductById(1);
+		assertNotNull(product);		
 		assertEquals(1, (int)product.getId());
 		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
 		assertNotNull(product.getGroup());

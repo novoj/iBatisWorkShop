@@ -67,7 +67,7 @@
             where name = #{name} and productGroup.name = #{group}
     </select>
 
-    <insert id="createProduct" parameterType="product" keyProperty="id">
+    <insert id="createProduct" parameterType="product">
         insert into product (name, idGroup) values (#{name}, #{group.id})
         <selectKey keyProperty="id" resultType="int">call identity()</selectKey>
     </insert>
@@ -78,5 +78,9 @@
                 idGroup = #{group.id}
             where id = #{id}
     </update>
+
+    <delete id="deleteProduct" parameterType="int">
+        delete from product where id = #{id}
+    </delete>
 
 </mapper>

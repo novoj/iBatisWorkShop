@@ -62,7 +62,7 @@ public class ProductGroupMapperTest extends AbstractBaseTest {
 	}
 
 	@Test
-	public void testDeleteTag() throws Exception {
+	public void testDeleteGroup() throws Exception {
 		productGroupMapper.deleteGroup(5);
 		assertEquals(4, productGroupMapper.countGroups());
 	}

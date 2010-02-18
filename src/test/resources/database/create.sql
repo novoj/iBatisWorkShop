@@ -62,5 +62,5 @@ CREATE TABLE productTag (
   CONSTRAINT fk_productTag_tag FOREIGN KEY (idTag)
   REFERENCES tag (id),
   CONSTRAINT fk_productTag_product FOREIGN KEY (idProduct)
-  REFERENCES product (id)
+  REFERENCES product (id) ON DELETE CASCADE
 );

@@ -20,4 +20,12 @@ SEQUENCE
 - groups
     - show only selectKey before
 - product
+    - association
+    - collections
+    - TODO conditional
+    - TODO annotations
+    - TODO lazy loading
+    - TODO caching
 - users
+    - TODO discriminator
+    - TODO typehandlers

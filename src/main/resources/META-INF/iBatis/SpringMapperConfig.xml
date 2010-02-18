@@ -7,7 +7,7 @@
 
     <settings>
         <setting name="cacheEnabled" value="true"/>
-        <setting name="lazyLoadingEnabled" value="false"/>
+        <setting name="lazyLoadingEnabled" value="true"/>
         <setting name="multipleResultSetsEnabled" value="true"/>
         <setting name="useColumnLabel" value="true"/>
         <setting name="useGeneratedKeys" value="false"/>        
@@ -24,6 +24,7 @@
 
     <mappers>
         <mapper resource="META-INF/iBatis/ProductMapper.xml"/>
+        <mapper resource="META-INF/iBatis/AnnotationBasedProductMapper.xml"/>
         <mapper resource="META-INF/iBatis/ProductTagMapper.xml"/>
         <mapper resource="META-INF/iBatis/ProductGroupMapper.xml"/>
         <mapper resource="META-INF/iBatis/UserMapper.xml"/>

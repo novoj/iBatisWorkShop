@@ -26,6 +26,10 @@ public class Group implements Serializable {
 		this.groupType = groupType;
 	}
 
+	public Group(Integer id) {
+		this.id = id;
+	}
+
 	public Integer getId() {
 		return id;
 	}

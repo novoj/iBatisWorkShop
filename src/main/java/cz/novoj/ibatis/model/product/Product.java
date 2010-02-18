@@ -16,6 +16,14 @@ public class Product implements Serializable {
   	private Group group;
 	private List<Tag> tags;
 
+	public Product() {
+	}
+
+	public Product(String name, Group group) {
+		this.name = name;
+		this.group = group;
+	}
+
 	public Integer getId() {
 		return id;
 	}

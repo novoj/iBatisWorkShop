@@ -31,6 +31,11 @@
 		<property name="mapperInterface" value="cz.novoj.ibatis.AnnotationBasedProductMapper" />
 	</bean>
 
+    <bean id="cndProductMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+		<property name="mapperInterface" value="cz.novoj.ibatis.ConditionalProductMapper" />
+	</bean>
+
     <bean id="productTagMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<property name="mapperInterface" value="cz.novoj.ibatis.ProductTagMapper" />

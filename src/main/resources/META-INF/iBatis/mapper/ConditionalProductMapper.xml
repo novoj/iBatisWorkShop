@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="cz.novoj.ibatis.ConditionalProductMapper">
+
+    <select id="getProducts" parameterType="map" resultMap="cz.novoj.ibatis.ProductMapper.thinProduct">
+        select product.*, productGroup.name as groupName, productGroup.groupType
+            from product
+            inner join productGroup on idGroup = productGroup.id            
+        <where>
+            <if test="titlePart != null">
+                AND product.name like #{titlePart}
+            </if>
+            <if test="groupNamePart != null">
+                AND productGroup.name like #{groupNamePart}
+            </if>
+        </where>
+    </select>
+
+    <select id="getProductsAlternativeWithTrim" parameterType="map" resultMap="cz.novoj.ibatis.ProductMapper.thinProduct">
+        select product.*, productGroup.name as groupName, productGroup.groupType
+            from product
+            inner join productGroup on idGroup = productGroup.id
+        <trim prefix="where" prefixOverrides="AND|OR">
+            <if test="titlePart != null">
+                AND product.name like #{titlePart}
+            </if>
+            <if test="groupNamePart != null">
+                AND productGroup.name like #{groupNamePart}
+            </if>
+        </trim>
+    </select>
+
+    <select id="getProductsById" resultMap="cz.novoj.ibatis.ProductMapper.thinProduct">
+        select product.*, productGroup.name as groupName, productGroup.groupType
+            from product
+            inner join productGroup on idGroup = productGroup.id
+        where product.id in
+          <foreach collection="array" item="item" open="(" close=")" separator=", ">
+              #{item}
+          </foreach>
+    </select>
+
+    <select id="getProductsByChoose" parameterType="map" resultMap="cz.novoj.ibatis.ProductMapper.thinProduct">
+        select product.*, productGroup.name as groupName, productGroup.groupType
+            from product
+            inner join productGroup on idGroup = productGroup.id
+        <where>
+            <choose>
+                <when test="titlePart != null">
+                    AND product.name like #{titlePart}
+                </when>
+                <when test="groupNamePart != null">
+                    AND productGroup.name like #{groupNamePart}
+                </when>
+                <otherwise>
+                    AND productGroup.id = 1
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <update id="selectiveUpdate" parameterType="product">
+        update product
+            <set>
+                <if test="name != null">name = #{name},</if>
+                <if test="group != null and group.id != null">idGroup = #{group.id},</if>
+            </set>
+            where id = #{id}
+    </update>
+
+    <update id="selectiveUpdateAlternativeWithTrim" parameterType="product">
+        update product
+            <trim prefix="set" suffixOverrides=",">
+                <if test="name != null">name = #{name},</if>
+                <if test="group != null and group.id != null">idGroup = #{group.id},</if>
+            </trim>
+            where id = #{id}
+    </update>
+
+</mapper>

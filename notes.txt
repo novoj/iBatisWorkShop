@@ -23,7 +23,7 @@ SEQUENCE
     - association
     - collections
     - lazy loading
-    - TODO conditional
+    - conditional
     - annotations
 - users
     - TODO discriminator

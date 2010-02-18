@@ -23,11 +23,12 @@
     </typeAliases>    
 
     <mappers>
-        <mapper resource="META-INF/iBatis/ProductMapper.xml"/>
-        <mapper resource="META-INF/iBatis/AnnotationBasedProductMapper.xml"/>
-        <mapper resource="META-INF/iBatis/ProductTagMapper.xml"/>
-        <mapper resource="META-INF/iBatis/ProductGroupMapper.xml"/>
-        <mapper resource="META-INF/iBatis/UserMapper.xml"/>
+        <mapper resource="META-INF/iBatis/mapper/ProductMapper.xml"/>
+        <mapper resource="META-INF/iBatis/mapper/ConditionalProductMapper.xml"/>
+        <mapper resource="META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml"/>
+        <mapper resource="META-INF/iBatis/mapper/ProductTagMapper.xml"/>
+        <mapper resource="META-INF/iBatis/mapper/ProductGroupMapper.xml"/>
+        <mapper resource="META-INF/iBatis/mapper/UserMapper.xml"/>
     </mappers>
 
 </configuration>

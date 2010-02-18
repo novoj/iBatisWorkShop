@@ -37,7 +37,8 @@ public class ProductGroupMapperTest extends AbstractBaseTest {
 		assertNotNull(group.getId());
 
 		Group loadedGroup = productGroupMapper.getGroupById(group.getId());
-		assertEquals(group, loadedGroup);
+		assertEquals(group.getName(), loadedGroup.getName());
+		assertEquals(group.getGroupType(), loadedGroup.getGroupType());
 	}
 
 	@Test
@@ -47,7 +48,8 @@ public class ProductGroupMapperTest extends AbstractBaseTest {
 		assertNotNull(group.getId());
 
 		Group loadedGroup = productGroupMapper.getGroupById(group.getId());
-		assertEquals(group, loadedGroup);
+		assertEquals(group.getName(), loadedGroup.getName());
+		assertEquals(group.getGroupType(), loadedGroup.getGroupType());
 	}
 
 	@Test
@@ -58,7 +60,8 @@ public class ProductGroupMapperTest extends AbstractBaseTest {
 		productGroupMapper.updateGroup(group);
 
 		Group loadedGroup = productGroupMapper.getGroupById(1);
-		assertEquals(group, loadedGroup);
+		assertEquals(group.getName(), loadedGroup.getName());
+		assertEquals(group.getGroupType(), loadedGroup.getGroupType());
 	}
 
 	@Test

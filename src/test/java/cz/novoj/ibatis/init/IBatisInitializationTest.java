@@ -1,6 +1,6 @@
 package cz.novoj.ibatis.init;
 
-import cz.novoj.ibatis.AbstractBaseTest;
+import cz.novoj.ibatis.infrastructure.AbstractBaseTest;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;

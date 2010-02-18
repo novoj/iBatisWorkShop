@@ -1,5 +1,6 @@
 package cz.novoj.ibatis;
 
+import cz.novoj.ibatis.infrastructure.AbstractBaseTest;
 import cz.novoj.ibatis.model.product.Product;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ import static org.junit.Assert.assertEquals;
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
  */
-public class ConditionalExpressionsTest extends AbstractBaseTest {
+public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 	@Autowired
 	protected ConditionalProductMapper cndProductMapper;
 	@Autowired

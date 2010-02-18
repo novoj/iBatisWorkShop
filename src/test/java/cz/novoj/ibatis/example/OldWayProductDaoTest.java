@@ -1,5 +1,7 @@
-package cz.novoj.ibatis;
+package cz.novoj.ibatis.example;
 
+import cz.novoj.ibatis.OldWayProductDao;
+import cz.novoj.ibatis.infrastructure.AbstractBaseTest;
 import cz.novoj.ibatis.model.product.Product;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +16,7 @@ import static org.junit.Assert.assertNull;
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
  */
-public class OldWayProductDaoTest extends AbstractBaseTest{
+public class OldWayProductDaoTest extends AbstractBaseTest {
 	@Autowired
 	private OldWayProductDao oldWayProductDao;
 

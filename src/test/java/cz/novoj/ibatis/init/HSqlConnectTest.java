@@ -1,6 +1,6 @@
 package cz.novoj.ibatis.init;
 
-import cz.novoj.ibatis.AbstractBaseTest;
+import cz.novoj.ibatis.infrastructure.AbstractBaseTest;
 import junit.framework.Assert;
 import org.junit.Test;
 

@@ -11,16 +11,19 @@
                            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
                            http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.0.xsd">
 
-    <!-- iBATIS 3 -->
+    <!-- iBATIS 3 - session factory init -->
     <bean id="sqlSessionFactory" class="org.springframework.orm.ibatis3.SqlSessionFactoryBean">
 		<property name="configLocation" value="classpath:/META-INF/iBatis/SpringMapperConfig.xml" />
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 
+    <!-- I wouldn't recommend using old way, when we have mappers at hand -->
     <bean id="oldWayProductDao" class="cz.novoj.ibatis.OldWayProductDao">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
+    <!-- this new way of using iBatis 3 rocks!
+         I can imagine specialized namespace that could even more minimize this declaration -->    
 	<bean id="productMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<property name="mapperInterface" value="cz.novoj.ibatis.ProductMapper" />

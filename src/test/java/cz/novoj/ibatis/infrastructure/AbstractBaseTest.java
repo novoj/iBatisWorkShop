@@ -1,4 +1,4 @@
-package cz.novoj.ibatis;
+package cz.novoj.ibatis.infrastructure;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.jdbc.ScriptRunner;
@@ -18,7 +18,9 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
- * Description
+ * This base test initializes SqlSessionFactory through Spring and prepares HSQL database for tests.
+ * Before each test database is setup from the ground up and populated with data. After each test
+ * all database tables are dropped.
  *
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $

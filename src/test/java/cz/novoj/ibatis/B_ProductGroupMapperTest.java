@@ -1,5 +1,6 @@
 package cz.novoj.ibatis;
 
+import cz.novoj.ibatis.infrastructure.AbstractBaseTest;
 import cz.novoj.ibatis.model.product.Group;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ import static org.junit.Assert.assertNotNull;
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
  */
-public class ProductGroupMapperTest extends AbstractBaseTest {
+public class B_ProductGroupMapperTest extends AbstractBaseTest {
 	@Autowired
 	private ProductGroupMapper productGroupMapper;
 

@@ -1,5 +1,6 @@
 package cz.novoj.ibatis;
 
+import cz.novoj.ibatis.infrastructure.AbstractBaseTest;
 import cz.novoj.ibatis.model.product.Group;
 import cz.novoj.ibatis.model.product.Product;
 import org.apache.ibatis.session.RowBounds;
@@ -18,7 +19,7 @@ import static org.junit.Assert.assertNull;
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
  */
-public class ProductMapperTest extends AbstractBaseTest {
+public class C_ProductMapperTest extends AbstractBaseTest {
 	@Autowired
 	protected ProductMapper productMapper;
 

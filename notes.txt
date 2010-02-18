@@ -1,9 +1,3 @@
-- lazy loading
-- caching
-- write your own TypeHandler - enum with ordinal()
-- override objectFactory - example with AOP
-- try usage of plugins?! - need to find out rational use-case first
-
 - check the code on someones computer not attached to the network
 - prepare lib folder with all dependencies
 - prepare distribution package
@@ -26,5 +20,5 @@ SEQUENCE
     - conditional
     - annotations
 - users
-    - TODO discriminator
-    - TODO typehandlers
+    - discriminator
+    - typehandlers

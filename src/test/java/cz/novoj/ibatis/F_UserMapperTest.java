@@ -1,5 +1,6 @@
 package cz.novoj.ibatis;
 
+import cz.novoj.ibatis.infrastructure.AbstractBaseTest;
 import cz.novoj.ibatis.model.user.Employee;
 import cz.novoj.ibatis.model.user.ExternalUser;
 import cz.novoj.ibatis.model.user.User;
@@ -20,7 +21,7 @@ import static org.junit.Assert.assertTrue;
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
  */
-public class UserMapperTest extends AbstractBaseTest {
+public class F_UserMapperTest extends AbstractBaseTest {
 	@Autowired
 	private UserMapper userMapper;
 

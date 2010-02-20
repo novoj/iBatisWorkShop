@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="a3315fc1-aea1-4d83-a82e-f433fe0f11d9" name="Default" comment="">
+      <change type="MOVED" beforePath="C:\Prototypes\iBatisWorkshop\iBatis 3 Workskop CZJUG.pptx" afterPath="$PROJECT_DIR$/docs/iBatis 3 Workskop CZJUG.pptx" />
+      <change type="MOVED" beforePath="C:\Prototypes\iBatisWorkshop\notes.txt" afterPath="$PROJECT_DIR$/docs/notes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/database/create.sql" afterPath="$PROJECT_DIR$/src/test/resources/database/create.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/User-class-model.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java" afterPath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/database/test-data.sql" afterPath="$PROJECT_DIR$/src/test/resources/database/test-data.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/model.eap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Products-data-model.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/User-data-model.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Product-class-model.png" />
     </list>
     <ignored path="iBatisWorkshop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,28 +87,7 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="notes.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="34" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="F_UserMapperTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="36" selection-start="2873" selection-end="2873" vertical-scroll-proportion="1.2350427">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -116,8 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/ProductTagMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/init/IBatisInitializationTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/datasource.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/ibatis-integration.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" />
@@ -132,6 +117,8 @@
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/E_AnnotationBasedProductMapperTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/database/test-data.sql" />
+        <option value="$PROJECT_DIR$/src/test/resources/database/create.sql" />
       </list>
     </option>
   </component>
@@ -627,6 +614,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iBatisWorkshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iBatisWorkshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -982,7 +983,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883435" sideWeight="0.54148936" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21677893" sideWeight="0.54148936" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45106384" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45106384" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1039,48 +1040,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-9/ibatis-sqlmap-3.0-beta-9-sources.jar!/org/apache/ibatis/session/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="26" selection-start="8452" selection-end="8452" vertical-scroll-proportion="0.33259177">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-9/ibatis-sqlmap-3.0-beta-9-sources.jar!/org/apache/ibatis/executor/SimpleExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="48" selection-start="887" selection-end="887" vertical-scroll-proportion="0.36707452">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-9/ibatis-sqlmap-3.0-beta-9-sources.jar!/org/apache/ibatis/executor/Executor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="390" selection-end="390" vertical-scroll-proportion="0.09788654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-9/ibatis-sqlmap-3.0-beta-9.jar!/org/apache/ibatis/executor/loader/ResultLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="10" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.33259177">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ibatis/ibatis-sqlmap/3.0-beta-9/ibatis-sqlmap-3.0-beta-9-sources.jar!/org/apache/ibatis/executor/loader/ResultLoaderRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="62" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.75929976">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="746" selection-end="746" vertical-scroll-proportion="0.4160178">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="12" selection-start="676" selection-end="676" vertical-scroll-proportion="0.6389497">
@@ -1132,10 +1091,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes.txt">
+    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="40" column="41" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.53503895">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1146,13 +1107,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java">
+    <entry file="file://$PROJECT_DIR$/docs/User-data-model.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/database/create.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="36" selection-start="2873" selection-end="2873" vertical-scroll-proportion="1.2350427">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="10" column="42" selection-start="260" selection-end="260" vertical-scroll-proportion="0.24070022">
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/Products-data-model.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/Product-class-model.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="169" selection-end="169" vertical-scroll-proportion="0.12035011">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/database/test-data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/User-class-model.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

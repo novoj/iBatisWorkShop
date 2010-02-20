@@ -9,21 +9,6 @@ INSERT INTO user values (8, 'dominator', 'Dominik', 'Hašek', '1973-04-01', 0, '
 INSERT INTO user values (9, 'veskic', 'Martin', 'Veska', '1979-07-01', 1, 'EMPLOYEE', '00006', null, null);
 INSERT INTO user values (10, 'jety', 'Pavel', 'Jetenský', '1978-08-20', 1, 'EXTERNAL', null, 'Telefonica O2', '4563342132');
 
-INSERT INTO role values (1, 'standardUser', 'Standardní uživatel');
-INSERT INTO role values (2, 'administrator', 'Administrátor');
-INSERT INTO role values (3, 'powerUser', 'Technická správa');
-
-INSERT INTO userRole values (1, 1, 3);
-INSERT INTO userRole values (2, 2, 2);
-INSERT INTO userRole values (3, 3, 2);
-INSERT INTO userRole values (4, 4, 1);
-INSERT INTO userRole values (5, 5, 1);
-INSERT INTO userRole values (6, 6, 2);
-INSERT INTO userRole values (7, 7, 1);
-INSERT INTO userRole values (8, 8, 1);
-INSERT INTO userRole values (9, 9, 2);
-INSERT INTO userRole values (10, 10, 3);
-
 INSERT INTO productGroup values (1, 'HDD', 'HARDWARE');
 INSERT INTO productGroup values (2, 'Operační systémy', 'SOFTWARE');
 INSERT INTO productGroup values (3, 'Monitory', 'HARDWARE');

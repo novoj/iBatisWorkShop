@@ -14,9 +14,12 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 /**
- * Description
+ * This test would require using two enum TypeHandlers - for converting UserState and UserType enums. One gets converted
+ * by value to varchar column, second by ordinal value to integer column. Next challenge is to use discriminator facility
+ * to load different types of user POJOs as User class is made abstract. 
  *
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
@@ -25,6 +28,12 @@ public class F_UserMapperTest extends AbstractBaseTest {
 	@Autowired
 	private UserMapper userMapper;
 
+	/**
+	 * Implement basic selection statement in UserMapper class and UserMapper.xml config.
+	 * User is expected to be Employee instance with state = enabled.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetUserByIdEmployee() throws Exception {
 		User user = userMapper.getUserById(1);
@@ -36,6 +45,12 @@ public class F_UserMapperTest extends AbstractBaseTest {
 		assertEquals("00012", ((Employee)user).getEmployeeNumber());
 	}
 
+	/**
+	 * Implement basic selection statement in UserMapper class and UserMapper.xml config.
+	 * User is expected to be ExternalUser instance with state = disabled.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetUserByIdExternalUser() throws Exception {
 		User user = userMapper.getUserById(4);
@@ -48,9 +63,27 @@ public class F_UserMapperTest extends AbstractBaseTest {
 		assertEquals("Fischer Scientific", ((ExternalUser)user).getCompanyName());
 	}
 
+	/**
+	 * Implement basic selection statement in UserMapper class and UserMapper.xml config.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetUsers() throws Exception {
 		List<User> users = userMapper.getUsers();
 		assertEquals(10, users.size());
+		int employees = 0;
+		int externalUsers = 0;
+		for(User user : users) {
+			if (user instanceof Employee) {
+				employees++;
+			} else if (user instanceof ExternalUser) {
+				externalUsers++;
+			} else {
+				fail("No third type of user supported?!");
+			}
+		}
+		assertEquals(5, employees);
+		assertEquals(5, externalUsers);
 	}
 }

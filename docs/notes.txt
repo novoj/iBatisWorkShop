@@ -1,6 +1,4 @@
-- make model images
 - check the code on someones computer not attached to the network
-- prepare lib folder with all dependencies
 - prepare distribution package
 
 SEQUENCE

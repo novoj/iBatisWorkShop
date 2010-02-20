@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="a3315fc1-aea1-4d83-a82e-f433fe0f11d9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/notes.txt" afterPath="$PROJECT_DIR$/docs/notes.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" />
     </list>
     <ignored path="iBatisWorkshop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,19 +80,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SpringMapperConfig.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml">
+      <file leaf-file-name="notes.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/notes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="204" selection-end="747" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapperConfig.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="15" selection-start="747" selection-end="747" vertical-scroll-proportion="-0.15016685">
+            <state line="22" column="14" selection-start="516" selection-end="516" vertical-scroll-proportion="0.81072026">
               <folding />
             </state>
           </provider>
@@ -114,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/ibatis-integration.xml" />
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/AbstractBaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/AnnotationBasedProductMapperTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/infrastructure/AbstractBaseTest.java" />
@@ -130,6 +120,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" />
+        <option value="$PROJECT_DIR$/docs/notes.txt" />
       </list>
     </option>
   </component>
@@ -957,11 +948,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7489362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883435" sideWeight="0.54148936" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21677893" sideWeight="0.54148936" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21677893" sideWeight="0.662766" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45106384" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -985,7 +976,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assembly." />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1012,6 +1003,7 @@
     <MESSAGE value="Tests pass ..." />
     <MESSAGE value="Documentation" />
     <MESSAGE value="Assembly." />
+    <MESSAGE value="Removing target." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1089,13 +1081,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="169" selection-end="169" vertical-scroll-proportion="0.12035011">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/database/test-data.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1115,16 +1100,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="204" selection-end="747" vertical-scroll-proportion="0.0">
+        <state line="48" column="32" selection-start="2351" selection-end="2351" vertical-scroll-proportion="0.6084538">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="15" selection-start="747" selection-end="747" vertical-scroll-proportion="-0.15016685">
+        <state line="17" column="16" selection-start="204" selection-end="747" vertical-scroll-proportion="0.4160178">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="14" selection-start="516" selection-end="516" vertical-scroll-proportion="0.81072026">
           <folding />
         </state>
       </provider>

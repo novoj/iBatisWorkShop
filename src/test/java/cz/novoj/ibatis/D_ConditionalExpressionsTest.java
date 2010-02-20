@@ -30,7 +30,7 @@ public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 	 * @throws Exception
 	 */
 	@Test
-	public void testCountProducts() throws Exception {
+	public void testGetProducts() throws Exception {
 		assertEquals(2, cndProductMapper.getProducts("%Samsung%", "%HDD%").size());
 		assertEquals(5, cndProductMapper.getProducts(null, "%HDD%").size());
 		assertEquals(4, cndProductMapper.getProducts("%Samsung%", null).size());
@@ -44,7 +44,7 @@ public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 	 * @throws Exception
 	 */
 	@Test
-	public void testCountProductsAlternativeWithTrim() throws Exception {
+	public void testGetProductsAlternativeWithTrim() throws Exception {
 		assertEquals(2, cndProductMapper.getProductsAlternativeWithTrim("%Samsung%", "%HDD%").size());
 		assertEquals(5, cndProductMapper.getProductsAlternativeWithTrim(null, "%HDD%").size());
 		assertEquals(4, cndProductMapper.getProductsAlternativeWithTrim("%Samsung%", null).size());
@@ -61,7 +61,7 @@ public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 	 * @throws Exception
 	 */
 	@Test
-	public void testCountProductsByChoose() throws Exception {
+	public void testGetProductsByChoose() throws Exception {
 		assertEquals(4, cndProductMapper.getProductsByChoose("%Samsung%", "%HDD%").size());
 		assertEquals(5, cndProductMapper.getProductsByChoose(null, "%HDD%").size());
 		assertEquals(4, cndProductMapper.getProductsByChoose("%Samsung%", null).size());

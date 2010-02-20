@@ -45,7 +45,7 @@
     </sql>
 
     <sql id="tagJoin">
-        left outer join productTag on product.id = productTag.idProduct
+        left join productTag on product.id = productTag.idProduct
         inner join tag on productTag.idTag = tag.id 
     </sql>
 

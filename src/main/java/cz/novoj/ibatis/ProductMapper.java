@@ -1,7 +1,6 @@
 package cz.novoj.ibatis;
 
 import cz.novoj.ibatis.model.product.Product;
-import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.RowBounds;
 
 import java.util.List;
@@ -29,7 +28,7 @@ public interface ProductMapper {
 
 	Product getFullLazyProductById(int id);
 
-	Product getProductByNameAndGroup(@Param("name") String name, @Param("group") String group);
+	Product getProductByNameAndGroup(String name, String group);
 
 	void createProduct(Product product);
 

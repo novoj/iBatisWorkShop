@@ -55,6 +55,8 @@ public class B_ProductGroupMapperTest extends AbstractBaseTest {
 
 	/**
 	 * Implement basic selection statement in ProductGroupMapper class and ProductGroupMapper.xml config.
+	 * Nothing new here.
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -64,6 +66,8 @@ public class B_ProductGroupMapperTest extends AbstractBaseTest {
 
 	/**
 	 * Implement basic selection statement in ProductGroupMapper class and ProductGroupMapper.xml config.
+	 * Nothing new here.
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -76,6 +80,8 @@ public class B_ProductGroupMapperTest extends AbstractBaseTest {
 
 	/**
 	 * Implement basic update statement in ProductGroupMapper class and ProductGroupMapper.xml config.
+	 * Nothing new here.
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -92,6 +98,8 @@ public class B_ProductGroupMapperTest extends AbstractBaseTest {
 
 	/**
 	 * Implement basic delete statement in ProductGroupMapper class and ProductGroupMapper.xml config.
+	 * Nothing new here.
+	 *
 	 * @throws Exception
 	 */
 	@Test

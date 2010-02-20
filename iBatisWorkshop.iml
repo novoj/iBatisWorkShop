@@ -26,12 +26,7 @@
     <orderEntry type="library" exported="" name="Maven: commons-dbcp:commons-dbcp:1.2.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: commons-collections:commons-collections:2.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: commons-pool:commons-pool:1.2" level="project" />
-    <orderEntry type="library" exported="" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />
-    <orderEntry type="library" exported="" name="Maven: xerces:xercesImpl:2.0.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: log4j:log4j:1.2.15" level="project" />
-    <orderEntry type="library" exported="" name="Maven: javax.mail:mail:1.4" level="project" />
-    <orderEntry type="library" exported="" name="Maven: javax.activation:activation:1.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: javax.jms:jms:1.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.sun.jdmk:jmxtools:1.2.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: com.sun.jmx:jmxri:1.2.1" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-core:3.0.0.RELEASE" level="project" />

@@ -10,7 +10,8 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Description
+ * This test shows how to write easily conditional statement with iBatis. This part of iBatis has changed a lot since
+ * 2nd version. And for better too.
  *
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
@@ -21,6 +22,13 @@ public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 	@Autowired
 	protected ProductMapper productMapper;
 
+	/**
+	 * Implement basic selection statement in ConditionalProductMapper class and ConditionalProductMapper.xml config.
+	 * Write a conditional count statement that counts product that contains in name or groupName specific string.
+	 * Use <where> and <if> keywords.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testCountProducts() throws Exception {
 		assertEquals(2, cndProductMapper.getProducts("%Samsung%", "%HDD%").size());
@@ -29,6 +37,12 @@ public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 		assertEquals(18, cndProductMapper.getProducts(null, null).size());
 	}
 
+	/**
+	 * Rewrite previous statement avoiding <where> keyword in the statement - to see that <where> is only specific
+	 * derivation of <trim> keyword.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testCountProductsAlternativeWithTrim() throws Exception {
 		assertEquals(2, cndProductMapper.getProductsAlternativeWithTrim("%Samsung%", "%HDD%").size());
@@ -37,6 +51,15 @@ public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 		assertEquals(18, cndProductMapper.getProducts(null, null).size());
 	}
 
+	/**
+	 * Implement basic selection statement in ConditionalProductMapper class and ConditionalProductMapper.xml config.
+	 * Write a conditional count statement that counts product that contains in name or groupName specific string.
+	 * Let say that only one of the conditions will apply at the time. Priority is driven by argument position in the
+	 * signature. When no conditions is set list only product of the group with id = 1.
+	 * Use <choose>, <when> and <otherwise> keywords.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testCountProductsByChoose() throws Exception {
 		assertEquals(4, cndProductMapper.getProductsByChoose("%Samsung%", "%HDD%").size());
@@ -45,6 +68,15 @@ public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 		assertEquals(5, cndProductMapper.getProductsByChoose(null, null).size());
 	}
 
+	/**
+	 * Implement basic selection statement in ConditionalProductMapper class and ConditionalProductMapper.xml config.
+	 * Load multiple products at the time by specifying their ids - would trigger need of in (?, ?, ?) in SQL statement.
+	 * Use <foreach> keyword.
+	 *
+	 * Notice, that varargs are not yet supported due to bug reported as IBATIS-748.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetProductsById() throws Exception {
 		List<Product> products = cndProductMapper.getProductsById(new Integer[] {1, 2, 3});
@@ -54,6 +86,12 @@ public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 		assertEquals("Samsung HDD 160GB Samsung SpinPoint F1 SATAII/300 3RZ", products.get(2).getName());
 	}
 
+	/**
+	 * Implement basic update statement in ConditionalProductMapper class and ConditionalProductMapper.xml config.
+	 * Update only those properties that are specified - let's say we do not want to touch group settings if group is
+	 * not specified.
+	 * Use <set> and <if> keywords.
+	 */
 	@Test
 	public void testSelectiveUpdate() {
 		Product product = productMapper.getProductById(1);
@@ -66,6 +104,12 @@ public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 		assertEquals("HDD", loadedProduct.getGroup().getName());
 	}
 
+	/**
+	 * Rewrite previous statement avoiding <set> keyword in the statement - to see that <set> is only specific
+	 * derivation of <trim> keyword.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testSelectiveUpdateAlternativeWithTrim() {
 		Product product = productMapper.getProductById(1);

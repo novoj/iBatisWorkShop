@@ -2,6 +2,8 @@
   <dictionary name="JNO">
     <words>
       <w>batis</w>
+      <w>vararg</w>
+      <w>varargs</w>
     </words>
   </dictionary>
 </component>

@@ -9,6 +9,9 @@
     <settings>
         <setting name="cacheEnabled" value="true"/>
         <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- available in new version -->
+        <!-- <setting name="aggressiveLazyLoading" value="false"/> -->
+        <!-- <setting name="autoMappingBehavior" valu="FULL"/> -->
         <setting name="multipleResultSetsEnabled" value="true"/>
         <setting name="useColumnLabel" value="true"/>
         <setting name="useGeneratedKeys" value="false"/>

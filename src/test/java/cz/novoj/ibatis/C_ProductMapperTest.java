@@ -14,7 +14,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 /**
- * Description
+ * This test practices association and collection loading and lazy loading behaviour.
  *
  * @author Jan Novotný, FG Forrest a.s. (c) 2007
  * @version $Id: $
@@ -23,23 +23,58 @@ public class C_ProductMapperTest extends AbstractBaseTest {
 	@Autowired
 	protected ProductMapper productMapper;
 
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Just warm up ourselves before diving into the other tests.
+	 * Nothing new here.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testCountProducts() throws Exception {
 		assertEquals(18, productMapper.countProducts());
 	}
 
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Group object is expected to be loaded along with product POJOs.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetProducts() throws Exception {
 		List<Product> products = productMapper.getProducts();
 		assertEquals(18, products.size());
+		for(Product product : products) {
+			assertNotNull(product);
+			assertNotNull(product.getGroup());
+		}
 	}
 
+	/**
+	 * Implement basic selection statement in ProductMapper class.
+	 * Use iBatis Paging facility to crop results from 5th record to the 7th.
+	 * See, we don't even need to make a new statement in the ProductMapper.xml config.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetProductsRowBounds() throws Exception {
 		List<Product> products = productMapper.getProducts(new RowBounds(5, 2));
 		assertEquals(2, products.size());
+		for(Product product : products) {
+			assertNotNull(product);
+			assertNotNull(product.getGroup());
+		}
 	}
 
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Product with Group object is expected in the result, tags are not yet needed.
+	 * Implement logic via SQL join.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetProductById() throws Exception {
 		Product product = productMapper.getProductById(1);
@@ -52,6 +87,16 @@ public class C_ProductMapperTest extends AbstractBaseTest {
 		assertNull(product.getTags());
 	}
 
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Product with Group object is expected in the result, tags are not yet needed.
+	 * Group is expected to be loaded lazily - with one extra select.
+	 *
+	 * With setting aggressiveLazyLoading = true (default) objects are not loaded lazily but completely when they are
+	 * first touched. In opposite setting objects are loaded one by one when touching appropriate property. 
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetLazyProductById() throws Exception {
 		Product product = productMapper.getLazyProductById(1);
@@ -64,6 +109,13 @@ public class C_ProductMapperTest extends AbstractBaseTest {
 		assertNull(product.getTags());
 	}
 
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Product with Group object and even Tag list is expected in the result.
+	 * Implement logic via SQL join.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetFullProductById() throws Exception {
 		Product product = productMapper.getFullProductById(1);
@@ -79,6 +131,16 @@ public class C_ProductMapperTest extends AbstractBaseTest {
 		assertEquals("SATA", product.getTags().get(1).getName());
 	}
 
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Product with Group object and with Tag listing is expected in the result.
+	 * Group and tags are expected to be loaded lazily - with one extra select.
+	 *
+	 * With setting aggressiveLazyLoading = true (default) objects are not loaded lazily but completely when they are
+	 * first touched. In opposite setting objects are loaded one by one when touching appropriate property.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetFullLazyProductById() throws Exception {
 		Product product = productMapper.getFullLazyProductById(1);
@@ -94,12 +156,22 @@ public class C_ProductMapperTest extends AbstractBaseTest {
 		assertEquals("SATA", product.getTags().get(1).getName());
 	}
 
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Pass multiple arguments to the query statement. User @Param annotations to name them or use indexed var names.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetProductByNameAndGroup() throws Exception {
 		Product product = productMapper.getProductByNameAndGroup("Lenovo ThinkPad 64GB Solid State Disk", "HDD");
 		assertNotNull(product);
 	}
 
+	/**
+	 * Implement basic create statement in ProductMapper class and ProductMapper.xml config.
+	 * Nothing new here.
+	 */
 	@Test
 	public void testCreateProduct() {
 		Product product = new Product("Some new HDD", new Group(1));
@@ -111,6 +183,10 @@ public class C_ProductMapperTest extends AbstractBaseTest {
 		assertEquals("HDD", loadedProduct.getGroup().getName());
 	}
 
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Nothing new here.
+	 */
 	@Test
 	public void testUpdateProduct() {
 		Product product = productMapper.getProductById(1);
@@ -123,6 +199,10 @@ public class C_ProductMapperTest extends AbstractBaseTest {
 		assertEquals("Monitory", loadedProduct.getGroup().getName());
 	}
 
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Nothing new here.
+	 */
 	@Test
 	public void testDeleteProduct() {
 		productMapper.deleteProduct(1);

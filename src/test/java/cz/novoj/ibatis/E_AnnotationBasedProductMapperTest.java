@@ -21,11 +21,24 @@ public class E_AnnotationBasedProductMapperTest extends AbstractBaseTest {
 	@Autowired
 	protected AnnotationBasedProductMapper annProductMapper;
 
+	/**
+	 * Implement basic selection statement in AnnotationBasedProductMapper class and AnnotationBasedProductMapper.xml config.
+	 * Very simple and elegant way to implement easy queries. 
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testCountProducts() throws Exception {
 		assertEquals(18, annProductMapper.countProducts());
 	}
 
+	/**
+	 * Implement basic selection statement in AnnotationBasedProductMapper class and AnnotationBasedProductMapper.xml config.
+	 * Group object is expected to be loaded along with product POJOs.
+	 * Annotations there gets more complicated as you need to specify more @Results and @Result mappings.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetProductById() throws Exception {
 		Product product = annProductMapper.getProductById(1);
@@ -38,6 +51,15 @@ public class E_AnnotationBasedProductMapperTest extends AbstractBaseTest {
 		assertNull(product.getTags());
 	}
 
+	/**
+	 * Implement basic selection statement in AnnotationBasedProductMapper class and AnnotationBasedProductMapper.xml config.
+	 * Product with Group object and even Tag list is expected in the result.
+	 * In this case you'd need two statements as join is not supported in annotations - you'd need to specify
+	 * another method to select tags in extra statement and use @Many annotations.
+	 * This gets ugly comparing to XML definition.
+	 *
+	 * @throws Exception
+	 */
 	@Test
 	public void testGetFullProductById() throws Exception {
 		Product product = annProductMapper.getFullProductById(1);
@@ -53,6 +75,14 @@ public class E_AnnotationBasedProductMapperTest extends AbstractBaseTest {
 		assertEquals("SATA", product.getTags().get(1).getName());
 	}
 
+	/**
+	 * Implement basic create statement in AnnotationBasedProductMapper class and AnnotationBasedProductMapper.xml config.
+	 *
+	 * Please note, that you cannot get generated id from annotation based create statement unless JDBC driver supports
+	 * generated keys output and you use @Option to specify which property should be populated with the key.
+	 *
+	 * Proposal for @SelectKey annotation was raised in issue IBATIS-642.
+	 */
 	@Test
 	public void testCreateProduct() {
 		Product product = new Product("Some new HDD", new Group(1));
@@ -64,6 +94,10 @@ public class E_AnnotationBasedProductMapperTest extends AbstractBaseTest {
 		assertEquals("HDD", loadedProduct.getGroup().getName());
 	}
 
+	/**
+	 * Implement basic selection statement in AnnotationBasedProductMapper class and AnnotationBasedProductMapper.xml config.
+	 * Nothing new here.
+	 */
 	@Test
 	public void testUpdateProduct() {
 		Product product = annProductMapper.getProductById(1);
@@ -76,6 +110,10 @@ public class E_AnnotationBasedProductMapperTest extends AbstractBaseTest {
 		assertEquals("Monitory", loadedProduct.getGroup().getName());
 	}
 
+	/**
+	 * Implement basic selection statement in AnnotationBasedProductMapper class and AnnotationBasedProductMapper.xml config.
+	 * Nothing new here.
+	 */
 	@Test
 	public void testDeleteProduct() {
 		annProductMapper.deleteProduct(1);

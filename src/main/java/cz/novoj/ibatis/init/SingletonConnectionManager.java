@@ -47,7 +47,7 @@ public class SingletonConnectionManager {
 		Properties properties;
 		Reader propertiesReader = new InputStreamReader(
 				clsLoader.getResourceAsStream(
-						"META-INF/config/connection.properties"
+						"config/connection.properties"
 				)
 		);
 		try {

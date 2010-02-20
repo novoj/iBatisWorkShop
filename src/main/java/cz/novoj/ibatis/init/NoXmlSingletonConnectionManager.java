@@ -55,7 +55,7 @@ public class NoXmlSingletonConnectionManager {
 	private static Properties readProperties(ClassLoader clsLoader) {
 		Reader propertiesReader = new InputStreamReader(
 				clsLoader.getResourceAsStream(
-						"META-INF/config/connection.properties"
+						"config/connection.properties"
 				)
 		);
 		try {

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="a3315fc1-aea1-4d83-a82e-f433fe0f11d9" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Prototypes\iBatisWorkshopPublic\src\main\resources\META-INF\config\connection.properties" afterPath="$PROJECT_DIR$/src/test/resources/config/connection.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/spring/testSetup.xml" afterPath="$PROJECT_DIR$/src/test/resources/spring/testSetup.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/SingletonConnectionManager.java" afterPath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/SingletonConnectionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/NoXmlSingletonConnectionManager.java" afterPath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/NoXmlSingletonConnectionManager.java" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="iBatisWorkshop.iws" />
@@ -81,22 +81,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="D_ConditionalExpressionsTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java">
+      <file leaf-file-name="SingletonConnectionManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/SingletonConnectionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="23" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.0">
+            <state line="49" column="25" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testSetup.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/spring/testSetup.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="NoXmlSingletonConnectionManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/NoXmlSingletonConnectionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="51" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.35">
+            <state line="57" column="25" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.4463895">
               <folding />
             </state>
           </provider>
@@ -118,8 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/docs/notes.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml" />
@@ -134,6 +129,8 @@
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/C_ProductMapperTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/spring/testSetup.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/SingletonConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/NoXmlSingletonConnectionManager.java" />
       </list>
     </option>
   </component>
@@ -633,7 +630,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="org.intellij.plugins.intelliLang.Settings" />
+    <property name="options.lastSelected" value="preferences.lookFeel" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -651,7 +648,7 @@
       <recent name="cz.novoj.ibatis.model.user" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.cz.novoj.ibatis.init in iBatisWorkshop">
+  <component name="RunManager" selected="JUnit.cz.novoj.ibatis in iBatisWorkshop">
     <configuration default="false" name="E_AnnotationBasedProductMapperTest.testCreateProduct" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -995,16 +992,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="47" selection-start="213" selection-end="213" vertical-scroll-proportion="0.072210066" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="243" selection-end="243" vertical-scroll-proportion="0.14442013" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/database/drop.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="16" selection-start="101" selection-end="101" vertical-scroll-proportion="0.12035011" />
@@ -1069,19 +1056,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="23" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/spring/testSetup.xml">
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="51" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.35">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="23" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.4204672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/SingletonConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="25" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/NoXmlSingletonConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="25" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.4463895">
           <folding />
         </state>
       </provider>

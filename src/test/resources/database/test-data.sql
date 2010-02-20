@@ -1,33 +1,19 @@
-INSERT INTO user values (1, 'novoj', 'Jan', 'Novotný', '1978-05-05', 1, 0, '00012', null, null);
-INSERT INTO user values (2, 'humr', 'Petr', 'Humorný', '1980-11-08', 1, 0, '00016', null, null);
-INSERT INTO user values (3, 'fik', 'Max', 'Fikejs', '1969-02-01', 1, 0, '00018', null, null);
-INSERT INTO user values (4, 'rodrigez', 'Roman', 'Geňa', '1981-09-17', 0, 1, null, 'Fischer Scientific', '129837281');
-INSERT INTO user values (5, 'igen', 'Ivan', 'Polák', '1977-05-05', 1, 1, null, 'Telefonica O2', '4563342132');
-INSERT INTO user values (6, 'dolar', 'Dominik', 'Linhart', '1988-09-21', 1, 0, '00012', null, null);
-INSERT INTO user values (7, 'janko', 'Jan', 'Lašák', '1982-07-02', 1, 1, null, 'Moeller', '2132443345');
-INSERT INTO user values (8, 'dominator', 'Dominik', 'Hašek', '1973-04-01', 0, 1, null, 'Moeller', '2132443345');
-INSERT INTO user values (9, 'veskic', 'Martin', 'Veska', '1979-07-01', 1, 0, '00006', null, null);
-INSERT INTO user values (10, 'jety', 'Pavel', 'Jetenský', '1978-30-08', 1, 0, null, 'Telefonica O2', '4563342132');
-
-INSERT INTO role values (1, 'standardUser', 'Standardní uživatel');
-INSERT INTO role values (2, 'administrator', 'Administrátor');
-INSERT INTO role values (3, 'powerUser', 'Technická správa');
-
-INSERT INTO userRole values (1, 1, 3);
-INSERT INTO userRole values (2, 2, 2);
-INSERT INTO userRole values (3, 3, 2);
-INSERT INTO userRole values (4, 4, 1);
-INSERT INTO userRole values (5, 5, 1);
-INSERT INTO userRole values (6, 6, 2);
-INSERT INTO userRole values (7, 7, 1);
-INSERT INTO userRole values (8, 8, 1);
-INSERT INTO userRole values (9, 9, 2);
-INSERT INTO userRole values (10, 10, 3);
+INSERT INTO user values (1, 'novoj', 'Jan', 'Novotný', '1978-05-05', 1, 'EMPLOYEE', '00012', null, null);
+INSERT INTO user values (2, 'humr', 'Petr', 'Humorný', '1980-11-08', 1, 'EMPLOYEE', '00016', null, null);
+INSERT INTO user values (3, 'fik', 'Max', 'Fikejs', '1969-02-01', 1, 'EMPLOYEE', '00018', null, null);
+INSERT INTO user values (4, 'rodrigez', 'Roman', 'Geňa', '1981-09-17', 0, 'EXTERNAL', null, 'Fischer Scientific', '129837281');
+INSERT INTO user values (5, 'igen', 'Ivan', 'Polák', '1977-05-05', 1, 'EXTERNAL', null, 'Telefonica O2', '4563342132');
+INSERT INTO user values (6, 'dolar', 'Dominik', 'Linhart', '1988-09-21', 1, 'EMPLOYEE', '00012', null, null);
+INSERT INTO user values (7, 'janko', 'Jan', 'Lašák', '1982-07-02', 1, 'EXTERNAL', null, 'Moeller', '2132443345');
+INSERT INTO user values (8, 'dominator', 'Dominik', 'Hašek', '1973-04-01', 0, 'EXTERNAL', null, 'Moeller', '2132443345');
+INSERT INTO user values (9, 'veskic', 'Martin', 'Veska', '1979-07-01', 1, 'EMPLOYEE', '00006', null, null);
+INSERT INTO user values (10, 'jety', 'Pavel', 'Jetenský', '1978-08-20', 1, 'EXTERNAL', null, 'Telefonica O2', '4563342132');
 
 INSERT INTO productGroup values (1, 'HDD', 'HARDWARE');
 INSERT INTO productGroup values (2, 'Operační systémy', 'SOFTWARE');
 INSERT INTO productGroup values (3, 'Monitory', 'HARDWARE');
 INSERT INTO productGroup values (4, 'Vývojová prostředí', 'SOFTWARE');
+INSERT INTO productGroup values (5, 'Nepoužitá skupina', 'SOFTWARE');
 
 INSERT INTO tag values (1, 'Samsung');
 INSERT INTO tag values (2, 'Lenovo');
@@ -40,6 +26,7 @@ INSERT INTO tag values (8, 'JetBrains');
 INSERT INTO tag values (9, 'Oracle Sun');
 INSERT INTO tag values (10, 'Java');
 INSERT INTO tag values (11, '.NET');
+INSERT INTO tag values (12, 'Nepoužitý tag');
 
 INSERT INTO product values (1, 'Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive', 1);
 INSERT INTO product values (2, 'Samsung HDD 750GB Samsung SpinPointF1 32MB SATAII RAID 3RZ', 1);

@@ -1,0 +1,23 @@
+- check the code on someones computer not attached to the network
+- prepare distribution package
+
+SEQUENCE
+- init
+- tags
+    - basic selection
+    - CUD operations
+        - selectKey after
+        - selectKey before - from groups mapping
+    - selecting into a map
+    - immutable POJOs (constructors and even private properties)
+- groups
+    - show only selectKey before
+- product
+    - association
+    - collections
+    - lazy loading
+    - conditional
+    - annotations
+- users
+    - discriminator
+    - typehandlers

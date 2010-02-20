@@ -1,6 +1,6 @@
 package cz.novoj.ibatis.init;
 
-import cz.novoj.ibatis.ProductManager;
+import cz.novoj.ibatis.ProductMapper;
 import org.apache.commons.io.IOUtils;
 import org.apache.ibatis.datasource.unpooled.UnpooledDataSource;
 import org.apache.ibatis.mapping.Environment;
@@ -19,7 +19,7 @@ import java.util.Properties;
 /**
  * Programmatic iBatis initialization - not XML here!
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class NoXmlSingletonConnectionManager {
@@ -44,7 +44,7 @@ public class NoXmlSingletonConnectionManager {
 					Environment environment =
 					new Environment("development", transactionFactory, dataSource);
 					Configuration configuration = new Configuration(environment);
-					configuration.addMapper(ProductManager.class);
+					configuration.addMapper(ProductMapper.class);
 					sqlSessionFactory =	new SqlSessionFactoryBuilder().build(configuration);
 				}
 			}

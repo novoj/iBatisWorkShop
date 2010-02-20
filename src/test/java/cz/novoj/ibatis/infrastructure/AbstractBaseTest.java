@@ -1,7 +1,8 @@
-package cz.novoj.ibatis;
+package cz.novoj.ibatis.infrastructure;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.jdbc.ScriptRunner;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +18,11 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
- * Description
+ * This base test initializes SqlSessionFactory through Spring and prepares HSQL database for tests.
+ * Before each test database is setup from the ground up and populated with data. After each test
+ * all database tables are dropped.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -27,11 +30,12 @@ import java.sql.SQLException;
 		locations = {
 				"classpath:spring/testSetup.xml",
 				"classpath:META-INF/spring/datasource.xml",
-				"classpath:META-INF/spring/ibatis-new-integration.xml"
+				"classpath:META-INF/spring/ibatis-integration.xml"
 		}
 )
 public abstract class AbstractBaseTest {
 	public static final String DATABASE_CREATE_SQL = "database/create.sql";
+	public static final String DATABASE_DROP_SQL = "database/drop.sql";
 	private static final String DATABASE_DATALOAD_SQL = "database/test-data.sql";
 	@Autowired(required = true)
 	private JdbcTemplate jdbcTemplate;
@@ -42,6 +46,11 @@ public abstract class AbstractBaseTest {
 	public void setupDatabase() throws Exception {
 		runScript(dataSource, DATABASE_CREATE_SQL);
 		runScript(dataSource, DATABASE_DATALOAD_SQL);
+	}
+
+	@After
+	public void dropDatabase() throws Exception {
+		runScript(dataSource, DATABASE_DROP_SQL);
 	}
 
 	protected static void runScript(DataSource ds, String resource) throws IOException, SQLException {

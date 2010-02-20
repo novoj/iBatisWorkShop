@@ -12,7 +12,7 @@ import java.util.Properties;
 /**
  * iBatis initialization by XML configuration.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class SingletonConnectionManager {

@@ -1,7 +1,4 @@
 - check the code on someones computer not attached to the network
-- prepare distribution package
-- create blog post
-- write Lada to publish post also on fg.cz
 
 SEQUENCE
 - init

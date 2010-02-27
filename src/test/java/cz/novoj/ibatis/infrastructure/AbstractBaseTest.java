@@ -14,6 +14,7 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.io.Reader;
+import java.nio.charset.Charset;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -41,6 +42,10 @@ public abstract class AbstractBaseTest {
 	private JdbcTemplate jdbcTemplate;
 	@Resource(name = "dataSource")	
 	private DataSource dataSource;
+
+	static {
+		Resources.setCharset(Charset.forName("UTF-8"));
+	}
 
 	@Before
 	public void setupDatabase() throws Exception {

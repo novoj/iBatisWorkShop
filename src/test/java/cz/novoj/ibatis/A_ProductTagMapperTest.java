@@ -98,7 +98,8 @@ public class A_ProductTagMapperTest extends AbstractBaseTest {
 	 */
 	@Test
 	public void testDeleteTag() throws Exception {
-		productTagMapper.deleteTag(12);
+		int removedItems = productTagMapper.deleteTag(12);
+		assertEquals(1, removedItems);
 		assertEquals(11, productTagMapper.countTags());
 	}
 

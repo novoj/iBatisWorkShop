@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Example class showing the old way of manipulating iBatis from Spring.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class OldWayProductDao extends SqlSessionDaoSupport {

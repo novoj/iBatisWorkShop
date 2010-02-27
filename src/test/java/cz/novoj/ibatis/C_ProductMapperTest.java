@@ -16,7 +16,7 @@ import static org.junit.Assert.assertNull;
 /**
  * This test practices association and collection loading and lazy loading behaviour.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class C_ProductMapperTest extends AbstractBaseTest {
@@ -33,6 +33,53 @@ public class C_ProductMapperTest extends AbstractBaseTest {
 	@Test
 	public void testCountProducts() throws Exception {
 		assertEquals(18, productMapper.countProducts());
+	}
+
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Product with Group object is expected in the result, tags are not yet needed.
+	 * Group is expected to be loaded lazily - with one extra select.
+	 *
+	 * With setting aggressiveLazyLoading = true (default) objects are not loaded lazily but completely when they are
+	 * first touched. In opposite setting objects are loaded one by one when touching appropriate property.
+	 *
+	 * @throws Exception
+	 */
+	@Test
+	public void testGetLazyProductById() throws Exception {
+		Product product = productMapper.getLazyProductById(1);
+		assertNotNull(product);
+		assertEquals(1, (int)product.getId());
+		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
+		assertNotNull(product.getGroup());
+		assertEquals("HDD", product.getGroup().getName());
+		assertEquals("HARDWARE", product.getGroup().getGroupType());
+		assertNull(product.getTags());
+	}
+
+	/**
+	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
+	 * Product with Group object and with Tag listing is expected in the result.
+	 * Group and tags are expected to be loaded lazily - with one extra select.
+	 *
+	 * With setting aggressiveLazyLoading = true (default) objects are not loaded lazily but completely when they are
+	 * first touched. In opposite setting objects are loaded one by one when touching appropriate property.
+	 *
+	 * @throws Exception
+	 */
+	@Test
+	public void testGetFullLazyProductById() throws Exception {
+		Product product = productMapper.getFullLazyProductById(1);
+		assertNotNull(product);
+		assertEquals(1, (int)product.getId());
+		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
+		assertNotNull(product.getGroup());
+		assertEquals("HDD", product.getGroup().getName());
+		assertEquals("HARDWARE", product.getGroup().getGroupType());
+		assertNotNull(product.getTags());
+		assertEquals(2, product.getTags().size());
+		assertEquals("Lenovo", product.getTags().get(0).getName());
+		assertEquals("SATA", product.getTags().get(1).getName());
 	}
 
 	/**
@@ -89,28 +136,6 @@ public class C_ProductMapperTest extends AbstractBaseTest {
 
 	/**
 	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
-	 * Product with Group object is expected in the result, tags are not yet needed.
-	 * Group is expected to be loaded lazily - with one extra select.
-	 *
-	 * With setting aggressiveLazyLoading = true (default) objects are not loaded lazily but completely when they are
-	 * first touched. In opposite setting objects are loaded one by one when touching appropriate property. 
-	 *
-	 * @throws Exception
-	 */
-	@Test
-	public void testGetLazyProductById() throws Exception {
-		Product product = productMapper.getLazyProductById(1);
-		assertNotNull(product);
-		assertEquals(1, (int)product.getId());
-		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
-		assertNotNull(product.getGroup());
-		assertEquals("HDD", product.getGroup().getName());
-		assertEquals("HARDWARE", product.getGroup().getGroupType());
-		assertNull(product.getTags());
-	}
-
-	/**
-	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
 	 * Product with Group object and even Tag list is expected in the result.
 	 * Implement logic via SQL join.
 	 *
@@ -120,31 +145,6 @@ public class C_ProductMapperTest extends AbstractBaseTest {
 	public void testGetFullProductById() throws Exception {
 		Product product = productMapper.getFullProductById(1);
 		assertNotNull(product);
-		assertEquals(1, (int)product.getId());
-		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
-		assertNotNull(product.getGroup());
-		assertEquals("HDD", product.getGroup().getName());
-		assertEquals("HARDWARE", product.getGroup().getGroupType());
-		assertNotNull(product.getTags());
-		assertEquals(2, product.getTags().size());
-		assertEquals("Lenovo", product.getTags().get(0).getName());
-		assertEquals("SATA", product.getTags().get(1).getName());
-	}
-
-	/**
-	 * Implement basic selection statement in ProductMapper class and ProductMapper.xml config.
-	 * Product with Group object and with Tag listing is expected in the result.
-	 * Group and tags are expected to be loaded lazily - with one extra select.
-	 *
-	 * With setting aggressiveLazyLoading = true (default) objects are not loaded lazily but completely when they are
-	 * first touched. In opposite setting objects are loaded one by one when touching appropriate property.
-	 *
-	 * @throws Exception
-	 */
-	@Test
-	public void testGetFullLazyProductById() throws Exception {
-		Product product = productMapper.getFullLazyProductById(1);
-		assertNotNull(product);		
 		assertEquals(1, (int)product.getId());
 		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", product.getName());
 		assertNotNull(product.getGroup());

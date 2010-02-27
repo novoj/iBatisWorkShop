@@ -12,7 +12,7 @@ import static org.junit.Assert.assertNotNull;
  * This tests practices the same things stated in A_ProductTagMapperTest with the exception of selectKey usage that
  * in case of groups needs to be preselected from sequence.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class B_ProductGroupMapperTest extends AbstractBaseTest {
@@ -55,6 +55,11 @@ public class B_ProductGroupMapperTest extends AbstractBaseTest {
 
 	/**
 	 * Implement basic selection statement in ProductGroupMapper class and ProductGroupMapper.xml config.
+<<<<<<< HEAD
+=======
+	 * Nothing new here.
+	 *
+>>>>>>> 8d01ec0e3b741ef90ea89d8c8ed7ee93f685b745
 	 * @throws Exception
 	 */
 	@Test
@@ -64,6 +69,11 @@ public class B_ProductGroupMapperTest extends AbstractBaseTest {
 
 	/**
 	 * Implement basic selection statement in ProductGroupMapper class and ProductGroupMapper.xml config.
+<<<<<<< HEAD
+=======
+	 * Nothing new here.
+	 *
+>>>>>>> 8d01ec0e3b741ef90ea89d8c8ed7ee93f685b745
 	 * @throws Exception
 	 */
 	@Test
@@ -76,6 +86,11 @@ public class B_ProductGroupMapperTest extends AbstractBaseTest {
 
 	/**
 	 * Implement basic update statement in ProductGroupMapper class and ProductGroupMapper.xml config.
+<<<<<<< HEAD
+=======
+	 * Nothing new here.
+	 *
+>>>>>>> 8d01ec0e3b741ef90ea89d8c8ed7ee93f685b745
 	 * @throws Exception
 	 */
 	@Test
@@ -92,6 +107,11 @@ public class B_ProductGroupMapperTest extends AbstractBaseTest {
 
 	/**
 	 * Implement basic delete statement in ProductGroupMapper class and ProductGroupMapper.xml config.
+<<<<<<< HEAD
+=======
+	 * Nothing new here.
+	 *
+>>>>>>> 8d01ec0e3b741ef90ea89d8c8ed7ee93f685b745
 	 * @throws Exception
 	 */
 	@Test

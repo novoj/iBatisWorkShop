@@ -5,7 +5,7 @@ import cz.novoj.ibatis.model.product.Group;
 /**
  * Contains DAO methods for product group manipulation and querying.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 @SuppressWarnings({"InterfaceNeverImplemented"})

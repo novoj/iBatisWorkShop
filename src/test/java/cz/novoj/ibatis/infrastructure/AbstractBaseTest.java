@@ -14,6 +14,7 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.io.Reader;
+import java.nio.charset.Charset;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -22,7 +23,7 @@ import java.sql.SQLException;
  * Before each test database is setup from the ground up and populated with data. After each test
  * all database tables are dropped.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -41,6 +42,10 @@ public abstract class AbstractBaseTest {
 	private JdbcTemplate jdbcTemplate;
 	@Resource(name = "dataSource")	
 	private DataSource dataSource;
+
+	static {
+		Resources.setCharset(Charset.forName("UTF-8"));
+	}
 
 	@Before
 	public void setupDatabase() throws Exception {

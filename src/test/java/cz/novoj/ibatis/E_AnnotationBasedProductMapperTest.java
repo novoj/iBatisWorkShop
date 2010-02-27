@@ -14,7 +14,7 @@ import static org.junit.Assert.assertNull;
  * This test contains same tests as C_ProductMapperTest, but the business logic should be rewritten by using
  * iBatis annotations instead of XML declaration. 
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class E_AnnotationBasedProductMapperTest extends AbstractBaseTest {

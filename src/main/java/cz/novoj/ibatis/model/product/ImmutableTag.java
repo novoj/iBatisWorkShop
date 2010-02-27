@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * An immutable version of the tag.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class ImmutableTag implements Serializable {

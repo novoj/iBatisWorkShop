@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
  * This test shows how to write easily conditional statement with iBatis. This part of iBatis has changed a lot since
  * 2nd version. And for better too.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class D_ConditionalExpressionsTest extends AbstractBaseTest {

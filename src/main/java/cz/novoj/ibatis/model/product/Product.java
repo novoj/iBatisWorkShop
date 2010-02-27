@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Product in some virtual shop.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class Product implements Serializable {

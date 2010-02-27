@@ -16,7 +16,7 @@ import static org.junit.Assert.assertNotNull;
 /**
  * This test shows the basic usage of iBatis.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class A_ProductTagMapperTest extends AbstractBaseTest {
@@ -98,7 +98,8 @@ public class A_ProductTagMapperTest extends AbstractBaseTest {
 	 */
 	@Test
 	public void testDeleteTag() throws Exception {
-		productTagMapper.deleteTag(12);
+		int removedItems = productTagMapper.deleteTag(12);
+		assertEquals(1, removedItems);
 		assertEquals(11, productTagMapper.countTags());
 	}
 

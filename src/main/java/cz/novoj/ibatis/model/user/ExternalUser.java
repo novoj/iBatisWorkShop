@@ -3,7 +3,7 @@ package cz.novoj.ibatis.model.user;
 /**
  * An user from outside.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class ExternalUser extends User {

@@ -1,4 +1,5 @@
 - check the code on someones computer not attached to the network
+- prepare distribution package
 
 SEQUENCE
 - init

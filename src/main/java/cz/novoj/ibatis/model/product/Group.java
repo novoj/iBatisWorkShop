@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Group of product.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class Group implements Serializable {

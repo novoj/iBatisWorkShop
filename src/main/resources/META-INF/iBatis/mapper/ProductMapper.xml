@@ -5,19 +5,10 @@
 
     <resultMap id="thinProduct" type="product">
         <id property="id" column="id"/>
-        <result property="name" column="name"/>
         <association property="group" column="idGroup" javaType="group">
             <id property="id" column="idGroup"/>
-            <result property="name" column="groupName"/>            
-            <result property="groupType" column="groupType"/>            
+            <result property="name" column="groupName"/>
         </association>
-    </resultMap>
-
-    <resultMap id="thinProductLazyLoaded" type="product">
-        <id property="id" column="id"/>
-        <result property="name" column="name"/>
-        <association property="group" column="idGroup" javaType="group"
-                     select="cz.novoj.ibatis.ProductGroupMapper.getGroupById"/>
     </resultMap>
 
     <resultMap id="fullProduct" type="product" extends="thinProduct">
@@ -25,6 +16,11 @@
             <id property="id" column="idTag"/>
             <result property="name" column="tagName"/>
         </collection>
+    </resultMap>
+
+    <resultMap id="thinProductLazyLoaded" type="product">
+        <association property="group" column="idGroup" javaType="group"
+                     select="cz.novoj.ibatis.ProductGroupMapper.getGroupById"/>
     </resultMap>
 
     <resultMap id="fullProductLazyLoaded" type="product" extends="thinProductLazyLoaded">

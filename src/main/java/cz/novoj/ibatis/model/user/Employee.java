@@ -3,7 +3,7 @@ package cz.novoj.ibatis.model.user;
 /**
  * User that is employee of our company.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class Employee extends User {

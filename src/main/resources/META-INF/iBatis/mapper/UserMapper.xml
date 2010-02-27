@@ -5,20 +5,9 @@
 
     <resultMap id="user" type="cz.novoj.ibatis.model.user.Employee">
         <id property="id"/>
-        <result property="login"/>
-        <result property="firstName"/>
-        <result property="lastName"/>
-        <result property="birthDate"/>
-        <result property="state"/>
-        <result property="type"/>
         <discriminator javaType="string" column="type">
-            <case value="EMPLOYEE" resultType="employee">
-                <result property="employeeNumber"/>
-            </case>
-            <case value="EXTERNAL" resultType="externalUser">
-                <result property="companyName"/>
-                <result property="companyIdNumber"/>
-            </case>
+            <case value="EMPLOYEE" resultType="employee"/>
+            <case value="EXTERNAL" resultType="externalUser"/>                
         </discriminator>
     </resultMap>
 

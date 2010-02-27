@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Some user POJO.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public abstract class User implements Serializable {

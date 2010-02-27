@@ -19,7 +19,7 @@ import java.util.Properties;
 /**
  * Programmatic iBatis initialization - not XML here!
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class NoXmlSingletonConnectionManager {

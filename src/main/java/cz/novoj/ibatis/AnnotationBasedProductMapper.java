@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Contains DAO methods for product manipulation and querying.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 @SuppressWarnings({"InterfaceNeverImplemented"})

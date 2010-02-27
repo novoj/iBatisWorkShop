@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Contains DAO methods for product tag manipulation and querying.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 @SuppressWarnings({"InterfaceNeverImplemented"})

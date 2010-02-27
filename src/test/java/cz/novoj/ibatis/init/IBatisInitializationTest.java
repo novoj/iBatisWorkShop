@@ -12,7 +12,7 @@ import static org.junit.Assert.assertNotNull;
 /**
  * These tests show 3 ways of iBatis initialization: XML, programmatic, Spring.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class IBatisInitializationTest extends AbstractBaseTest {

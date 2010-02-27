@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Tag used for cross cutting selection of products.
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class Tag implements Serializable {

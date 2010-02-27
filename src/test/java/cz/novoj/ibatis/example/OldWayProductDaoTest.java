@@ -13,7 +13,7 @@ import static org.junit.Assert.assertNull;
 /**
  * Description
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class OldWayProductDaoTest extends AbstractBaseTest {

@@ -21,7 +21,7 @@ import static org.junit.Assert.fail;
  * by value to varchar column, second by ordinal value to integer column. Next challenge is to use discriminator facility
  * to load different types of user POJOs as User class is made abstract. 
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public class F_UserMapperTest extends AbstractBaseTest {

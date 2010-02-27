@@ -12,7 +12,7 @@ import java.sql.SQLException;
 /**
  * This class converts enumeration type into the database form by ordinal value (and back again).
  *
- * @author Jan Novotný, FG Forrest a.s. (c) 2007
+ * @author Jan Novotný
  * @version $Id: $
  */
 public abstract class EnumOrdinalTypeHandler extends BaseTypeHandler {

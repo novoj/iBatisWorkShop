@@ -2,13 +2,7 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration>
-        <fileset id="fileset1" name="Production" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/datasource.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/ibatis-integration.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/META-INF/spring/ibatis-new-integration.xml</file>
-        </fileset>
-      </configuration>
+      <configuration />
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
@@ -40,7 +34,7 @@
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-context:3.0.0.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Maven: org.springframework:spring-expression:3.0.0.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Maven: hsqldb:hsqldb:1.8.0.10" level="project" />
-    <orderEntry type="library" exported="" name="Maven: org.apache.ibatis:ibatis-sqlmap:3.0-beta-9" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.apache.ibatis:ibatis-sqlmap:3.0-beta-10" level="project" />
     <orderEntry type="library" exported="" name="Maven: cglib:cglib-nodep:2.2" level="project" />
     <orderEntry type="library" exported="" name="Maven: commons-io:commons-io:1.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:2.5.6" level="project" />

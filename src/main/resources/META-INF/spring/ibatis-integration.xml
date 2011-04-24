@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:util="http://www.springframework.org/schema/util"
-       xmlns:tx="http://www.springframework.org/schema/tx"
-       xmlns:aop="http://www.springframework.org/schema/aop"
-       xmlns:lang="http://www.springframework.org/schema/lang"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
-                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
-                           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
-                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
-                           http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.0.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
     <!-- iBATIS 3 - session factory init -->
-    <bean id="sqlSessionFactory" class="org.springframework.orm.ibatis3.SqlSessionFactoryBean">
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="configLocation" value="classpath:/META-INF/iBatis/SpringMapperConfig.xml" />
 		<property name="dataSource" ref="dataSource" />
 	</bean>
@@ -24,32 +16,32 @@
 
     <!-- this new way of using iBatis 3 rocks!
          I can imagine specialized namespace that could even more minimize this declaration -->    
-	<bean id="productMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
+	<bean id="productMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<property name="mapperInterface" value="cz.novoj.ibatis.ProductMapper" />
 	</bean>
 
-    <bean id="annProductMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
+    <bean id="annProductMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<property name="mapperInterface" value="cz.novoj.ibatis.AnnotationBasedProductMapper" />
 	</bean>
 
-    <bean id="cndProductMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
+    <bean id="cndProductMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<property name="mapperInterface" value="cz.novoj.ibatis.ConditionalProductMapper" />
 	</bean>
 
-    <bean id="productTagMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
+    <bean id="productTagMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<property name="mapperInterface" value="cz.novoj.ibatis.ProductTagMapper" />
 	</bean>
 
-    <bean id="productGroupMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
+    <bean id="productGroupMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<property name="mapperInterface" value="cz.novoj.ibatis.ProductGroupMapper" />
 	</bean>
 
-    <bean id="userMapper" class="org.springframework.orm.ibatis3.support.MapperFactoryBean">
+    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<property name="mapperInterface" value="cz.novoj.ibatis.UserMapper" />
 	</bean>

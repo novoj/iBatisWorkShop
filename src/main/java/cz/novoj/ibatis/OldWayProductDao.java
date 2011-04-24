@@ -1,7 +1,7 @@
 package cz.novoj.ibatis;
 
 import cz.novoj.ibatis.model.product.Product;
-import org.springframework.orm.ibatis3.support.SqlSessionDaoSupport;
+import org.mybatis.spring.support.SqlSessionDaoSupport;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,11 +16,11 @@ public class OldWayProductDao extends SqlSessionDaoSupport {
 
 
 	public int countProducts() {
-		return (Integer)getSqlSessionTemplate().selectOne(appendPrefix("countProducts"));
+		return (Integer)getSqlSession().selectOne(appendPrefix("countProducts"));
 	}
 
 	public Product getProductById(int id) {
-		return (Product)getSqlSessionTemplate().selectOne(appendPrefix("getProductById"), id);
+		return (Product)getSqlSession().selectOne(appendPrefix("getProductById"), id);
 	}
 
 
@@ -28,22 +28,22 @@ public class OldWayProductDao extends SqlSessionDaoSupport {
 		Map<String, Object> params = new HashMap<String, Object>(2);
 		params.put("name", name);
 		params.put("group", group);
-		return (Product)getSqlSessionTemplate().selectOne(appendPrefix("getProductByNameAndGroup"), params);
+		return (Product)getSqlSession().selectOne(appendPrefix("getProductByNameAndGroup"), params);
 	}
 
 
 	public void createProduct(Product product) {
-		getSqlSessionTemplate().insert(appendPrefix("createProduct"), product);
+		getSqlSession().insert(appendPrefix("createProduct"), product);
 	}
 
 
 	public void updateProduct(Product product) {
-		getSqlSessionTemplate().update(appendPrefix("updateProduct"), product);
+		getSqlSession().update(appendPrefix("updateProduct"), product);
 	}
 
 
 	public void deleteProduct(int id) {
-		getSqlSessionTemplate().delete(appendPrefix("deleteProduct"), id);
+		getSqlSession().delete(appendPrefix("deleteProduct"), id);
 	}
 
 	private String appendPrefix(String statementName) {

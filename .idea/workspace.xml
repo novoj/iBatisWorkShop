@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3315fc1-aea1-4d83-a82e-f433fe0f11d9" name="Default" comment="Merge branch 'master' of github.com:novoj/iBatisWorkShop&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;docs/notes.txt&#10;&#9;pom.xml&#10;&#9;src/main/java/cz/novoj/ibatis/AnnotationBasedProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ConditionalProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/OldWayProductDao.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductGroupMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductTagMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/UserMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Group.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/ImmutableTag.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Product.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Tag.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/Employee.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/ExternalUser.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/User.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserState.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserStateEnumHandler.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserType.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserTypeEnumHandler.java&#10;&#9;src/main/java/cz/novoj/ibatis/util/EnumOrdinalTypeHandler.java&#10;&#9;src/main/resources/META-INF/iBatis/MapperConfig.xml&#10;&#9;src/main/resources/META-INF/iBatis/ProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/SpringMapperConfig.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductGroupMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductTagMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/UserMapper.xml&#10;&#9;src/test/java/cz/novoj/ibatis/A_ProductTagMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/B_ProductGroupMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/C_ProductMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/E_AnnotationBasedProductMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/F_UserMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/example/OldWayProductDaoTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/init/HSqlConnectTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/init/IBatisInitializationTest.java&#10;&#9;src/test/resources/database/drop.sql&#10;&#9;src/test/resources/spring/testSetup.xml&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/iBatis 3 Workskop CZJUG.odp" />
+    <list default="true" id="a3315fc1-aea1-4d83-a82e-f433fe0f11d9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductGroupMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductGroupMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductTagMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductTagMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml" />
     </list>
     <ignored path="iBatisWorkshop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,22 +102,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/resources/database/drop.sql" />
-        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/B_ProductGroupMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/C_ProductMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/spring/testSetup.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/SingletonConnectionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/init/NoXmlSingletonConnectionManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/infrastructure/AbstractBaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/AnnotationBasedProductMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/ProductMapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/A_ProductTagMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/OldWayProductDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/ibatis-integration.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductGroupMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductTagMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml" />
       </list>
     </option>
   </component>
@@ -195,6 +202,76 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="iBatisWorkShop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iBatisWorkShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.mybatis:mybatis-spring:1.0.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis-spring-1.0.0.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iBatisWorkShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.mybatis:mybatis-spring:1.0.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis-spring-1.0.0.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iBatisWorkShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.mybatis:mybatis-spring:1.0.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis-spring-1.0.0.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -949,6 +1026,7 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944787" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7489362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
@@ -961,7 +1039,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45022625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -984,7 +1061,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:novoj/iBatisWorkShop&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;docs/notes.txt&#10;&#9;pom.xml&#10;&#9;src/main/java/cz/novoj/ibatis/AnnotationBasedProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ConditionalProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/OldWayProductDao.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductGroupMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductTagMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/UserMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Group.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/ImmutableTag.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Product.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Tag.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/Employee.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/ExternalUser.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/User.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserState.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserStateEnumHandler.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserType.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserTypeEnumHandler.java&#10;&#9;src/main/java/cz/novoj/ibatis/util/EnumOrdinalTypeHandler.java&#10;&#9;src/main/resources/META-INF/iBatis/MapperConfig.xml&#10;&#9;src/main/resources/META-INF/iBatis/ProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/SpringMapperConfig.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductGroupMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductTagMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/UserMapper.xml&#10;&#9;src/test/java/cz/novoj/ibatis/A_ProductTagMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/B_ProductGroupMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/C_ProductMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/E_AnnotationBasedProductMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/F_UserMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/example/OldWayProductDaoTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/init/HSqlConnectTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/init/IBatisInitializationTest.java&#10;&#9;src/test/resources/database/drop.sql&#10;&#9;src/test/resources/spring/testSetup.xml&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Presentation migrated to ODF and updated." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1017,6 +1094,7 @@
     <MESSAGE value="Polishing" />
     <MESSAGE value="Corrections." />
     <MESSAGE value="Merge branch 'master' of github.com:novoj/iBatisWorkShop&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;docs/notes.txt&#10;&#9;pom.xml&#10;&#9;src/main/java/cz/novoj/ibatis/AnnotationBasedProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ConditionalProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/OldWayProductDao.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductGroupMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductTagMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/UserMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Group.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/ImmutableTag.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Product.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Tag.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/Employee.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/ExternalUser.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/User.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserState.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserStateEnumHandler.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserType.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserTypeEnumHandler.java&#10;&#9;src/main/java/cz/novoj/ibatis/util/EnumOrdinalTypeHandler.java&#10;&#9;src/main/resources/META-INF/iBatis/MapperConfig.xml&#10;&#9;src/main/resources/META-INF/iBatis/ProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/SpringMapperConfig.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductGroupMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductTagMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/UserMapper.xml&#10;&#9;src/test/java/cz/novoj/ibatis/A_ProductTagMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/B_ProductGroupMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/C_ProductMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/E_AnnotationBasedProductMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/F_UserMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/example/OldWayProductDaoTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/init/HSqlConnectTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/init/IBatisInitializationTest.java&#10;&#9;src/test/resources/database/drop.sql&#10;&#9;src/test/resources/spring/testSetup.xml&#10;" />
+    <MESSAGE value="Presentation migrated to ODF and updated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1026,74 +1104,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="92" selection-start="2854" selection-end="2854" vertical-scroll-proportion="0.25641027" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductGroupMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="64" selection-start="602" selection-end="602" vertical-scroll-proportion="0.54451346" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductTagMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="28" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.8074398" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="72" selection-start="615" selection-end="615" vertical-scroll-proportion="0.3129103" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config/connection.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="63" selection-start="3170" selection-end="3170" vertical-scroll-proportion="0.29847494" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/infrastructure/AbstractBaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="57" selection-start="439" selection-end="439" vertical-scroll-proportion="0.33115467" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.0.5.RELEASE/spring-test-3.0.5.RELEASE-sources.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="36" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.05664488" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/datasource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.87096775" />
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.0.0/mybatis-spring-1.0.0.jar!/org/mybatis/spring/mapper/MapperFactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="163" selection-end="163" vertical-scroll-proportion="0.21377672" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.0.0/mybatis-spring-1.0.0-sources.jar!/org/mybatis/spring/mapper/MapperFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="74" selection-start="434" selection-end="434" vertical-scroll-proportion="0.39215687" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.0.0/mybatis-spring-1.0.0-sources.jar!/org/mybatis/spring/support/SqlSessionDaoSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="28" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.78431374" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/OldWayProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="67" selection-start="458" selection-end="458" vertical-scroll-proportion="0.13885647" />
@@ -1107,9 +1117,143 @@
         <state />
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.0.4/mybatis-3.0.4.jar!/org/apache/ibatis/session/SqlSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="167" selection-end="167" vertical-scroll-proportion="0.10989011">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.0.4/mybatis-3.0.4-sources.jar!/org/apache/ibatis/session/SqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="35" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.0.0/mybatis-spring-1.0.0-sources.jar!/org/mybatis/spring/SqlSessionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="29" selection-start="9346" selection-end="9346" vertical-scroll-proportion="0.95734596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.0.0/mybatis-spring-1.0.0-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="332" column="62" selection-start="10675" selection-end="10675" vertical-scroll-proportion="0.38151658">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="107" selection-start="146" selection-end="146" vertical-scroll-proportion="0.021003501">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="27" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.54086536" />
+        <state line="1" column="0" selection-start="39" selection-end="146" vertical-scroll-proportion="0.021003501">
+          <folding>
+            <marker date="1303760844000" expanded="true" signature="1414:1466" placeholder="inner join p..." />
+            <marker date="1303760844000" expanded="true" signature="1599:1708" placeholder="left join pr..." />
+            <marker date="1303760844000" expanded="true" signature="1779:1807" placeholder="select count..product..." />
+            <marker date="1303760844000" expanded="true" signature="1896:1917" placeholder="select * fro..product..." />
+            <marker date="1303760844000" expanded="true" signature="2018:2172" placeholder="select produ..product..." />
+            <marker date="1303760844000" expanded="true" signature="2287:2325" placeholder="select * fro..product..." />
+            <marker date="1303760844000" expanded="true" signature="2430:2662" placeholder="select produ..product..." />
+            <marker date="1303760844000" expanded="true" signature="2781:2836" placeholder="select *, id..product..." />
+            <marker date="1303760844000" expanded="true" signature="2947:3144" placeholder="select produ..product..." />
+            <marker date="1303760844000" expanded="true" signature="3224:3358" placeholder="insert into product..." />
+            <marker date="1303760844000" expanded="true" signature="3450:3563" placeholder="update product..." />
+            <marker date="1303760844000" expanded="true" signature="3639:3675" placeholder="delete from product..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.0.0/mybatis-spring-1.0.0-sources.jar!/org/mybatis/spring/support/SqlSessionDaoSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="33" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.24504083">
+          <folding>
+            <element signature="method#getSqlSession#0;class#SqlSessionDaoSupport#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="107" selection-start="146" selection-end="146" vertical-scroll-proportion="0.021003501">
+          <folding>
+            <marker date="1303760852000" expanded="true" signature="322:729" placeholder="select produ..product..." />
+            <marker date="1303760852000" expanded="true" signature="911:1345" placeholder="select produ..product..." />
+            <marker date="1303760852000" expanded="true" signature="1491:1788" placeholder="select produ..product..." />
+            <marker date="1303760852000" expanded="true" signature="1945:2483" placeholder="select produ..product..." />
+            <marker date="1303760852000" expanded="true" signature="2633:2864" placeholder="update product..." />
+            <marker date="1303760852000" expanded="true" signature="2965:3231" placeholder="update product..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductGroupMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="107" selection-start="146" selection-end="146" vertical-scroll-proportion="0.021003501">
+          <folding>
+            <marker date="1303760858000" expanded="true" signature="264:495" placeholder="insert into productGroup..." />
+            <marker date="1303760858000" expanded="true" signature="592:713" placeholder="update productGroup..." />
+            <marker date="1303760858000" expanded="true" signature="787:828" placeholder="delete from productGroup..." />
+            <marker date="1303760858000" expanded="true" signature="899:932" placeholder="select count..productGroup..." />
+            <marker date="1303760858000" expanded="true" signature="1026:1069" placeholder="select * fro..productGroup..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductTagMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="107" selection-start="146" selection-end="146" vertical-scroll-proportion="0.021003501">
+          <folding>
+            <marker date="1303760865000" expanded="true" signature="258:381" placeholder="insert into tag..." />
+            <marker date="1303760865000" expanded="true" signature="465:535" placeholder="update tag..." />
+            <marker date="1303760865000" expanded="true" signature="607:642" placeholder="delete from tag..." />
+            <marker date="1303760865000" expanded="true" signature="711:735" placeholder="select count..tag..." />
+            <marker date="1303760865000" expanded="true" signature="825:862" placeholder="select * fro..tag..." />
+            <marker date="1303760865000" expanded="true" signature="956:1072" placeholder="select * fro..tag..." />
+            <marker date="1303760865000" expanded="true" signature="1169:1208" placeholder="select * fro..tag..." />
+            <marker date="1303760865000" expanded="true" signature="1299:1457" placeholder="select avg(l..tag..." />
+            <marker date="1303760865000" expanded="true" signature="1810:1847" placeholder="select * fro..tag..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="107" selection-start="146" selection-end="146" vertical-scroll-proportion="0.021003501">
+          <folding>
+            <marker date="1303760873000" expanded="true" signature="605:640" placeholder="select * fro..user..." />
+            <marker date="1303760873000" expanded="true" signature="708:726" placeholder="select * fro..user..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IntelliJIdea10/system/extResources/69c70a2f_mybatis-3-config.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.021003501">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="40" selection-end="154" vertical-scroll-proportion="0.021003501">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3315fc1-aea1-4d83-a82e-f433fe0f11d9" name="Default" comment="Re">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/iBatis 3 Workskop CZJUG.odp" afterPath="$PROJECT_DIR$/docs/iBatis 3 Workskop CZJUG.odp" />
+    <list default="true" id="a3315fc1-aea1-4d83-a82e-f433fe0f11d9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/issue/autoMappingFull/SpringMapperConfig.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/issue/autoMappingFull/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/issue/autoMappingFull/ibatis-integration.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/issue/autoMappingFull/IssueAutoMappingFullTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/model/user/User.java" afterPath="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/model/user/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java" afterPath="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/database/create.sql" afterPath="$PROJECT_DIR$/src/test/resources/database/create.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/database/drop.sql" afterPath="$PROJECT_DIR$/src/test/resources/database/drop.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/database/test-data.sql" afterPath="$PROJECT_DIR$/src/test/resources/database/test-data.sql" />
     </list>
     <ignored path="iBatisWorkshop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,37 +84,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProductMapper.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml">
+      <file leaf-file-name="IssueAutoMappingFullTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/issue/autoMappingFull/IssueAutoMappingFullTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="24" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1304173621000" expanded="true" signature="1809:1861" placeholder="inner join p..." />
-                <marker date="1304173621000" expanded="true" signature="1994:2103" placeholder="left join pr..." />
-                <marker date="1304173621000" expanded="true" signature="1994:2103" placeholder="left join pr..." />
-                <marker date="1304173621000" expanded="true" signature="2174:2202" placeholder="select count..product..." />
-                <marker date="1304173621000" expanded="true" signature="2174:2202" placeholder="select count..product..." />
-                <marker date="1304173621000" expanded="true" signature="2291:2312" placeholder="select * fro..product..." />
-                <marker date="1304173621000" expanded="true" signature="2291:2312" placeholder="select * fro..product..." />
-                <marker date="1304173621000" expanded="true" signature="2413:2567" placeholder="select produ..product..." />
-                <marker date="1304173621000" expanded="true" signature="2682:2720" placeholder="select * fro..product..." />
-                <marker date="1304173621000" expanded="true" signature="2682:2720" placeholder="select * fro..product..." />
-                <marker date="1304173621000" expanded="true" signature="2825:3057" placeholder="select produ..product..." />
-                <marker date="1304173621000" expanded="true" signature="3176:3231" placeholder="select *, id..product..." />
-                <marker date="1304173621000" expanded="true" signature="3342:3539" placeholder="select produ..product..." />
-                <marker date="1304173621000" expanded="true" signature="3619:3753" placeholder="insert into product..." />
-                <marker date="1304173621000" expanded="true" signature="3845:3958" placeholder="update product..." />
-                <marker date="1304173621000" expanded="true" signature="3845:3958" placeholder="update product..." />
-                <marker date="1304173621000" expanded="true" signature="4034:4070" placeholder="delete from product..." />
-              </folding>
+            <state line="37" column="25" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="SpringMapperConfig.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/issue/autoMappingFull/SpringMapperConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="47" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.36842105">
+            <state line="23" column="45" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.8023256">
               <folding />
             </state>
           </provider>
@@ -127,26 +105,29 @@
       <file leaf-file-name="create.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/database/create.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="36" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="331" selection-end="578" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="C_ProductMapperTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/C_ProductMapperTest.java">
+      <file leaf-file-name="F_UserMapperTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="0" selection-start="4773" selection-end="4773" vertical-scroll-proportion="0.0">
+            <state line="91" column="45" selection-start="2576" selection-end="3210" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="D_ConditionalExpressionsTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java">
+      <file leaf-file-name="AbstractBaseTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/infrastructure/AbstractBaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="16" selection-start="3253" selection-end="3253" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="35" column="1" selection-start="989" selection-end="1174" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1303678835000" expanded="true" signature="2602:2623" placeholder="select count..null..." />
+                <marker date="1303678835000" expanded="true" signature="2602:2623" placeholder="select count..null..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,22 +148,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/OldWayProductDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/ibatis-integration.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductGroupMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductTagMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/database/drop.sql" />
         <option value="$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/model/user/User.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/database/test-data.sql" />
         <option value="$PROJECT_DIR$/src/test/resources/database/create.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/issue/autoMappingFull/SpringMapperConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/issue/autoMappingFull/ibatis-integration.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/issue/autoMappingFull/IssueAutoMappingFullTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/issue/autoMappingFull/SpringMapperConfig.xml" />
       </list>
     </option>
   </component>
@@ -254,7 +235,7 @@
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="false" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
@@ -375,7 +356,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="cz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="novoj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ibatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iBatisWorkShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iBatisWorkShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="novoj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ibatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="issue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autoMappingFull" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -406,6 +437,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iBatisWorkShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iBatisWorkShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="issue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autoMappingFull" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -495,6 +560,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="cz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="novoj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ibatis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -518,6 +591,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="novoj" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -552,6 +633,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="novoj" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -819,8 +908,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cz.novoj.ibatis.issue.autoMappingFull" />
       <recent name="cz.novoj.ibatis.model.user" />
       <recent name="cz.novoj.ibatis" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF/issue/autoMappingFull" />
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF/iBatis/issue/autoMappingFull" />
     </key>
     <key name="IntroduceConstantDialog.RECENTS_KEY">
       <recent name="cz.novoj.ibatis.HSqlConnectTest" />
@@ -829,53 +923,7 @@
       <recent name="cz.novoj.ibatis.model.user" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in iBatisWorkshop">
-    <configuration default="false" name="All in iBatisWorkshop" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <module name="iBatisWorkshop" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="cz.novoj.ibatis.init in iBatisWorkshop" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <module name="iBatisWorkshop" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cz.novoj.ibatis.init" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.IssueAutoMappingFullTest">
     <configuration default="false" name="F_UserMapperTest.testGetUserByIdExternalUser" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -951,6 +999,62 @@
       <option name="PACKAGE_NAME" value="cz.novoj.ibatis" />
       <option name="MAIN_CLASS_NAME" value="cz.novoj.ibatis.C_ProductMapperTest" />
       <option name="METHOD_NAME" value="testGetFullLazyProductById" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="IssueAutoMappingFullTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="cz.novoj.ibatis.issue.autoMappingFull.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="iBatisWorkshop" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cz.novoj.ibatis.issue.autoMappingFull" />
+      <option name="MAIN_CLASS_NAME" value="cz.novoj.ibatis.issue.autoMappingFull.IssueAutoMappingFullTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="F_UserMapperTest.testGetUsers" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="cz.novoj.ibatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="iBatisWorkshop" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cz.novoj.ibatis" />
+      <option name="MAIN_CLASS_NAME" value="cz.novoj.ibatis.F_UserMapperTest" />
+      <option name="METHOD_NAME" value="testGetUsers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -1043,11 +1147,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in iBatisWorkshop" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.cz.novoj.ibatis.init in iBatisWorkshop" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.F_UserMapperTest.testGetUserByIdExternalUser" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.C_ProductMapperTest.testGetFullProductById" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.C_ProductMapperTest.testGetFullLazyProductById" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.F_UserMapperTest.testGetUserByIdExternalUser" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.C_ProductMapperTest.testGetFullProductById" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.C_ProductMapperTest.testGetFullLazyProductById" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.IssueAutoMappingFullTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.F_UserMapperTest.testGetUsers" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1118,7 +1222,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25842008" sideWeight="0.54148936" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2044199" sideWeight="0.61564624" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38435373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38435373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1144,7 +1248,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Presentation migrated to ODF and updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more complex mapping for discriminators." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1178,6 +1282,7 @@
     <MESSAGE value="Corrections." />
     <MESSAGE value="Merge branch 'master' of github.com:novoj/iBatisWorkShop&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;docs/notes.txt&#10;&#9;pom.xml&#10;&#9;src/main/java/cz/novoj/ibatis/AnnotationBasedProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ConditionalProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/OldWayProductDao.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductGroupMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/ProductTagMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/UserMapper.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Group.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/ImmutableTag.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Product.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/product/Tag.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/Employee.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/ExternalUser.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/User.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserState.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserStateEnumHandler.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserType.java&#10;&#9;src/main/java/cz/novoj/ibatis/model/user/UserTypeEnumHandler.java&#10;&#9;src/main/java/cz/novoj/ibatis/util/EnumOrdinalTypeHandler.java&#10;&#9;src/main/resources/META-INF/iBatis/MapperConfig.xml&#10;&#9;src/main/resources/META-INF/iBatis/ProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/SpringMapperConfig.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/AnnotationBasedProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ConditionalProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductGroupMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/ProductTagMapper.xml&#10;&#9;src/main/resources/META-INF/iBatis/mapper/UserMapper.xml&#10;&#9;src/test/java/cz/novoj/ibatis/A_ProductTagMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/B_ProductGroupMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/C_ProductMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/D_ConditionalExpressionsTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/E_AnnotationBasedProductMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/F_UserMapperTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/example/OldWayProductDaoTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/init/HSqlConnectTest.java&#10;&#9;src/test/java/cz/novoj/ibatis/init/IBatisInitializationTest.java&#10;&#9;src/test/resources/database/drop.sql&#10;&#9;src/test/resources/spring/testSetup.xml&#10;" />
     <MESSAGE value="Presentation migrated to ODF and updated." />
+    <MESSAGE value="Added more complex mapping for discriminators." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1187,55 +1292,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cz/novoj/ibatis/model/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.0.4/mybatis-3.0.4-sources.jar!/org/apache/ibatis/reflection/invoker/MethodInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="564" selection-end="564" vertical-scroll-proportion="0.43010753">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.0.4/mybatis-3.0.4-sources.jar!/org/apache/ibatis/executor/resultset/FastResultSetHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="258" column="0" selection-start="11167" selection-end="11167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.0.4/mybatis-3.0.4-sources.jar!/org/apache/ibatis/executor/resultset/NestedResultSetHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="4380" selection-end="4380" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/SpringMapperConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="58" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/MapperConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="40" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
@@ -1288,16 +1344,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/database/create.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/issue/autoMappingFull/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1304173268000" expanded="true" signature="1293:1576" placeholder="select user...." />
+            <marker date="1304173268000" expanded="true" signature="1644:1897" placeholder="select user...." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/issue/autoMappingFull/ibatis-integration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="111" selection-start="531" selection-end="531" vertical-scroll-proportion="0.16174583">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/ibatis-integration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="35" selection-start="580" selection-end="580" vertical-scroll-proportion="-9.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="47" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.36842105">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/iBatis/mapper/ProductMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
+        <state line="23" column="24" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.48421052">
           <folding>
             <marker date="1304173621000" expanded="true" signature="1809:1861" placeholder="inner join p..." />
             <marker date="1304173621000" expanded="true" signature="1994:2103" placeholder="left join pr..." />
@@ -1320,9 +1406,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/infrastructure/AbstractBaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="47" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.36842105">
+        <state line="35" column="1" selection-start="989" selection-end="1174" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1303678835000" expanded="true" signature="2602:2623" placeholder="select count..null..." />
+            <marker date="1303678835000" expanded="true" signature="2602:2623" placeholder="select count..null..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/F_UserMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="45" selection-start="2576" selection-end="3210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cz/novoj/ibatis/issue/autoMappingFull/IssueAutoMappingFullTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="25" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/database/create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="331" selection-end="578" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/issue/autoMappingFull/SpringMapperConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="45" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.8023256">
           <folding />
         </state>
       </provider>

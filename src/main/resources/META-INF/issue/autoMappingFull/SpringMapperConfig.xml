@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- could be omitted in sake of defaults -->
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="false"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="autoMappingBehavior" value="FULL"/>
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <setting name="useColumnLabel" value="true"/>
+        <setting name="useGeneratedKeys" value="false"/>
+    </settings>
+
+    <!-- use this to minimize typing full package names of the classes in configuration -->
+    <typeAliases>
+        <typeAlias type="cz.novoj.ibatis.model.product.Product" alias="product"/>
+        <typeAlias type="cz.novoj.ibatis.model.user.User" alias="user"/>
+        <typeAlias type="cz.novoj.ibatis.model.user.ExternalUser" alias="externalUser"/>
+        <typeAlias type="cz.novoj.ibatis.model.user.Employee" alias="employee"/>
+    </typeAliases>
+
+    <!-- automatic conversion for more complex objects from DB representation to Java and vice versa -->
+    <typeHandlers>
+        <typeHandler javaType="cz.novoj.ibatis.model.user.UserType" handler="cz.novoj.ibatis.model.user.UserTypeEnumHandler"/>
+        <typeHandler javaType="cz.novoj.ibatis.model.user.UserState" handler="cz.novoj.ibatis.model.user.UserStateEnumHandler"/>
+    </typeHandlers>
+
+    <!-- declare mappers known to iBatis - these contain the real SQL queries -->
+    <mappers>
+        <mapper resource="META-INF/issue/autoMappingFull/UserMapper.xml"/>
+    </mappers>
+
+</configuration>

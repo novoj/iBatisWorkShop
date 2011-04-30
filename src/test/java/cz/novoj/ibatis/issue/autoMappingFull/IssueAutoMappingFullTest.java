@@ -1,5 +1,6 @@
-package cz.novoj.ibatis;
+package cz.novoj.ibatis.issue.autoMappingFull;
 
+import cz.novoj.ibatis.UserMapper;
 import cz.novoj.ibatis.infrastructure.AbstractBaseTest;
 import cz.novoj.ibatis.model.user.Employee;
 import cz.novoj.ibatis.model.user.ExternalUser;
@@ -8,6 +9,7 @@ import cz.novoj.ibatis.model.user.UserState;
 import cz.novoj.ibatis.model.user.UserType;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
 
 import java.util.List;
 
@@ -24,7 +26,15 @@ import static org.junit.Assert.fail;
  * @author Jan Novotný
  * @version $Id: $
  */
-public class F_UserMapperTest extends AbstractBaseTest {
+@ContextConfiguration(
+		inheritLocations = false,
+		locations = {
+				"classpath:spring/testSetup.xml",
+				"classpath:META-INF/spring/datasource.xml",
+				"classpath:META-INF/issue/autoMappingFull/ibatis-integration.xml"
+		}
+)
+public class IssueAutoMappingFullTest extends AbstractBaseTest {
 	@Autowired
 	private UserMapper userMapper;
 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cz.novoj.ibatis.UserMapper">
+
+    <resultMap id="user" type="cz.novoj.ibatis.model.user.Employee">
+        <id property="id" column="id"/>
+        <id property="login" column="login"/>
+        <id property="state" column="state"/>
+        <id property="type" column="type"/>
+        <id property="firstName" column="firstName"/>
+        <id property="lastName" column="lastName"/>
+        <id property="birthDate" column="birthDate"/>
+        <id property="employeeNumber" column="employeeNumber"/>
+        <id property="companyName" column="companyName"/>
+        <id property="companyIdNumber" column="companyIdNumber"/>
+        <collection property="belongings" ofType="product">
+            <id property="id" column="idProduct"/>
+            <result property="name" column="productName"/>
+        </collection>
+        <discriminator javaType="string" column="type">
+            <case value="EMPLOYEE" resultType="employee"/>
+            <case value="EXTERNAL" resultType="externalUser"/>                
+        </discriminator>
+    </resultMap>
+
+    <select id="getUserById" parameterType="int" resultMap="user">
+        select user.*,
+               product.id as idProduct,
+               product.name as productName
+            from user
+            left join userProduct on user.id = userProduct.idUser
+            left join product on userProduct.idProduct = product.id
+        where user.id = #{id}
+    </select>
+
+    <select id="getUsers" resultMap="user">
+        select user.*,
+               product.id as idProduct,
+               product.name as productName
+            from user
+            left join userProduct on user.id = userProduct.idUser
+            left join product on userProduct.idProduct = product.id
+    </select>
+
+</mapper>

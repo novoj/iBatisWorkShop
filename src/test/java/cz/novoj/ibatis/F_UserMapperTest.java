@@ -1,6 +1,7 @@
 package cz.novoj.ibatis;
 
 import cz.novoj.ibatis.infrastructure.AbstractBaseTest;
+import cz.novoj.ibatis.model.product.Product;
 import cz.novoj.ibatis.model.user.Employee;
 import cz.novoj.ibatis.model.user.ExternalUser;
 import cz.novoj.ibatis.model.user.User;
@@ -61,6 +62,7 @@ public class F_UserMapperTest extends AbstractBaseTest {
 		assertEquals(UserType.EXTERNAL, user.getType());
 		assertEquals("129837281", ((ExternalUser)user).getCompanyIdNumber());
 		assertEquals("Fischer Scientific", ((ExternalUser)user).getCompanyName());
+		assertEquals(0, user.getBelongings().size());
 	}
 
 	/**
@@ -75,6 +77,9 @@ public class F_UserMapperTest extends AbstractBaseTest {
 		int employees = 0;
 		int externalUsers = 0;
 		for(User user : users) {
+			for(Product product : user.getBelongings()) {
+				System.out.println(product.getId() + " - " + product.getName() + "\n");
+			}
 			if (user instanceof Employee) {
 				employees++;
 			} else if (user instanceof ExternalUser) {

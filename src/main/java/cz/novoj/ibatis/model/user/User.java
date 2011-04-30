@@ -1,6 +1,9 @@
 package cz.novoj.ibatis.model.user;
 
+import cz.novoj.ibatis.model.product.Product;
+
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Some user POJO.
@@ -18,6 +21,7 @@ public abstract class User implements Serializable {
 	private String birthDate;
 	private UserState state;
 	private UserType type;
+	private List<Product> belongings;
 
 	public Integer getId() {
 		return id;
@@ -73,6 +77,14 @@ public abstract class User implements Serializable {
 
 	public void setType(UserType type) {
 		this.type = type;
+	}
+
+	public List<Product> getBelongings() {
+		return belongings;
+	}
+
+	public void setBelongings(List<Product> belongings) {
+		this.belongings = belongings;
 	}
 
 	@SuppressWarnings({"ControlFlowStatementWithoutBraces", "RedundantIfStatement"})

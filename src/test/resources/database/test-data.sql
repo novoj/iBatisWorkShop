@@ -73,3 +73,16 @@ INSERT INTO productTag values  (23, 17, 10);
 INSERT INTO productTag values  (24, 17, 8);
 INSERT INTO productTag values  (25, 18, 6);
 INSERT INTO productTag values  (26, 18, 11);
+
+INSERT INTO userProduct values  (1, 1, 1);
+INSERT INTO userProduct values  (2, 3, 1);
+INSERT INTO userProduct values  (3, 5, 1);
+INSERT INTO userProduct values  (4, 1, 3);
+INSERT INTO userProduct values  (5, 3, 5);
+INSERT INTO userProduct values  (6, 4, 5);
+INSERT INTO userProduct values  (7, 10, 5);
+INSERT INTO userProduct values  (8, 5, 7);
+INSERT INTO userProduct values  (9, 9, 7);
+INSERT INTO userProduct values  (10, 10, 8);
+INSERT INTO userProduct values  (11, 12, 8);
+INSERT INTO userProduct values  (12, 9, 10);

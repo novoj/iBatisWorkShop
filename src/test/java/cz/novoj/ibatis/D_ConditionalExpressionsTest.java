@@ -73,13 +73,11 @@ public class D_ConditionalExpressionsTest extends AbstractBaseTest {
 	 * Load multiple products at the time by specifying their ids - would trigger need of in (?, ?, ?) in SQL statement.
 	 * Use <foreach> keyword.
 	 *
-	 * Notice, that varargs are not yet supported due to bug reported as IBATIS-748.
-	 *
 	 * @throws Exception
 	 */
 	@Test
 	public void testGetProductsById() throws Exception {
-		List<Product> products = cndProductMapper.getProductsById(new Integer[] {1, 2, 3});
+		List<Product> products = cndProductMapper.getProductsById(1, 2, 3);
 		assertEquals(3, products.size());
 		assertEquals("Lenovo ThinkCentre 250GB Serial ATA Hard Disk Drive", products.get(0).getName());
 		assertEquals("Samsung HDD 750GB Samsung SpinPointF1 32MB SATAII RAID 3RZ", products.get(1).getName());

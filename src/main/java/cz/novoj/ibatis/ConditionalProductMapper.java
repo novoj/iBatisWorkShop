@@ -20,7 +20,7 @@ public interface ConditionalProductMapper {
 
 	List<Product> getProductsByChoose(@Param("titlePart") String titlePart, @Param("groupNamePart") String groupNamePart);
 
-	List<Product> getProductsById(Integer[] id);
+	List<Product> getProductsById(int... id);
 
 	void selectiveUpdate(Product product);
 

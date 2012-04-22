@@ -8,6 +8,12 @@
     <name>iBatis WorkShop Project</name>
     <url>http://maven.apache.org</url>
 
+    <properties>
+        <spring.version>3.1.1.RELEASE</spring.version>
+        <mybatis.version>3.1.1</mybatis.version>
+        <mybatis.integration.version>1.1.0</mybatis.integration.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>commons-dbcp</groupId>
@@ -50,12 +56,12 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>3.0.5.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>3.0.5.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>hsqldb</groupId>
@@ -65,12 +71,12 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.0.4</version>
+            <version>${mybatis.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
-            <version>1.0.0</version>
+            <version>${mybatis.integration.version}</version>
         </dependency>
         <dependency>
             <groupId>cglib</groupId>
@@ -86,13 +92,13 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>3.0.5.RELEASE</version>
+            <version>${spring.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.7</version>
+            <version>4.10</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

@@ -8,10 +8,11 @@
         <setting name="lazyLoadingEnabled" value="false"/>
         <!-- available in new version -->
         <!-- <setting name="aggressiveLazyLoading" value="false"/> -->
-        <!-- <setting name="autoMappingBehavior" valu="FULL"/> -->
+        <!-- <setting name="autoMappingBehavior" valu="PARTIAL"/> -->
         <setting name="multipleResultSetsEnabled" value="true"/>
         <setting name="useColumnLabel" value="true"/>
         <setting name="useGeneratedKeys" value="false"/>
+        <setting name="localCacheScope" value="STATEMENT"/>
     </settings>
 
     <!-- specify multiple enviroments that suit your needs -->

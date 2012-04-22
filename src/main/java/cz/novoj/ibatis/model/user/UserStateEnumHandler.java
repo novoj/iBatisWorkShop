@@ -1,6 +1,6 @@
 package cz.novoj.ibatis.model.user;
 
-import cz.novoj.ibatis.util.EnumOrdinalTypeHandler;
+import org.apache.ibatis.type.EnumOrdinalTypeHandler;
 
 /**
  * This iBatis TypeHandler converts UserType object by ordinal representation into the database form and back again.
@@ -8,7 +8,7 @@ import cz.novoj.ibatis.util.EnumOrdinalTypeHandler;
  * @author Jan Novotný
  * @version $Id: $
  */
-public class UserStateEnumHandler extends EnumOrdinalTypeHandler {
+public class UserStateEnumHandler extends EnumOrdinalTypeHandler<UserState> {
 
 	public UserStateEnumHandler() {
 		super(UserState.class);

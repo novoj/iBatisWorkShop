@@ -7,10 +7,11 @@
         <setting name="cacheEnabled" value="true"/>
         <setting name="lazyLoadingEnabled" value="false"/>
         <setting name="aggressiveLazyLoading" value="false"/>
-        <setting name="autoMappingBehavior" value="FULL"/>
+        <setting name="autoMappingBehavior" value="PARTIAL"/>
         <setting name="multipleResultSetsEnabled" value="true"/>
         <setting name="useColumnLabel" value="true"/>
         <setting name="useGeneratedKeys" value="false"/>
+        <setting name="localCacheScope" value="STATEMENT"/>
     </settings>
 
     <!-- use this to minimize typing full package names of the classes in configuration -->

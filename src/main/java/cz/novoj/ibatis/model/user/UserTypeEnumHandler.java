@@ -8,7 +8,7 @@ import org.apache.ibatis.type.EnumTypeHandler;
  * @author Jan Novotný
  * @version $Id: $
  */
-public class UserTypeEnumHandler extends EnumTypeHandler {
+public class UserTypeEnumHandler extends EnumTypeHandler<UserType> {
 
 	public UserTypeEnumHandler() {
 		super(UserType.class);
